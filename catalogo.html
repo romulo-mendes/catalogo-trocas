@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo de Trocas</title>
+<style>
+  :root {
+    --bg: #1a1a1a;
+    --panel: #242424;
+    --card: #2b2b2b;
+    --tile: #6e2b2b;
+    --text: #e8e8e8;
+    --muted: #9a9a9a;
+    --accent: #a8d34a;
+    --highlight: #d3b04a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", system-ui, sans-serif;
+  }
+  header {
+    background: var(--panel);
+    padding: 16px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,.5);
+  }
+  header h1 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .controles {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  #busca {
+    flex: 1;
+    min-width: 220px;
+    padding: 10px 14px;
+    font-size: 16px;
+    background: #171717;
+    color: var(--text);
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    outline: none;
+  }
+  #busca:focus { border-color: var(--accent); }
+  #filtro-npc, #filtro-lugar {
+    padding: 10px 14px;
+    font-size: 15px;
+    background: #171717;
+    color: var(--text);
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+  }
+  #contagem {
+    padding: 8px 20px 0;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  main {
+    padding: 16px 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .card .thumb {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: #101010;
+    cursor: zoom-in;
+  }
+  .card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    display: block;
+  }
+  .card .info { padding: 12px 14px 14px; }
+  .card h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  .card .local {
+    color: var(--accent);
+    font-size: 13px;
+    margin: 2px 0 10px;
+  }
+  .card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .card li {
+    background: var(--tile);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .card li.match {
+    outline: 2px solid var(--highlight);
+  }
+  .card li .qtd { color: var(--accent); white-space: nowrap; }
+  .incerto {
+    color: var(--highlight);
+    cursor: help;
+  }
+  #vazio {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--muted);
+    padding: 40px 0;
+  }
+  #modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, .85);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    cursor: zoom-out;
+  }
+  #modal.aberto { display: flex; }
+  #modal img {
+    max-width: 95vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 8px 40px rgba(0,0,0,.8);
+  }
+  #modal .legenda {
+    color: var(--text);
+    font-size: 15px;
+  }
+  #modal .fechar {
+    position: fixed;
+    top: 12px;
+    right: 18px;
+    font-size: 32px;
+    line-height: 1;
+    color: var(--text);
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+  #modal .fechar:hover { color: var(--highlight); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Catálogo de Trocas</h1>
+  <div class="controles">
+    <input id="busca" type="search" placeholder="Buscar item final ou material..." autofocus>
+    <select id="filtro-npc">
+      <option value="">Todos os NPCs</option>
+    </select>
+    <select id="filtro-lugar">
+      <option value="">Todos os lugares</option>
+    </select>
+  </div>
+</header>
+<div id="contagem"></div>
+<main id="resultados"></main>
+<div id="modal">
+  <button class="fechar" title="Fechar (Esc)">&times;</button>
+  <img alt="">
+  <div class="legenda"></div>
+</div>
+
+<script src="dados.js"></script>
+<script>
+  const $busca = document.getElementById("busca");
+  const $npc = document.getElementById("filtro-npc");
+  const $lugar = document.getElementById("filtro-lugar");
+  const $resultados = document.getElementById("resultados");
+  const $contagem = document.getElementById("contagem");
+
+  // Remove acentos e baixa a caixa para busca tolerante
+  function norm(s) {
+    return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  }
+
+  // Popula os dropdowns de NPC e lugar a partir dos dados
+  function popular($sel, valores) {
+    [...new Set(valores)].sort().forEach(v => {
+      const opt = document.createElement("option");
+      opt.value = v;
+      opt.textContent = v;
+      $sel.appendChild(opt);
+    });
+  }
+  popular($npc, CATALOGO.map(t => t.npc));
+  popular($lugar, CATALOGO.map(t => t.lugar));
+
+  function esc(s) {
+    const d = document.createElement("div");
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  function render() {
+    const termo = norm($busca.value.trim());
+    const npcSel = $npc.value;
+    const lugarSel = $lugar.value;
+
+    const visiveis = CATALOGO.filter(t => {
+      if (npcSel && t.npc !== npcSel) return false;
+      if (lugarSel && t.lugar !== lugarSel) return false;
+      if (!termo) return true;
+      return norm(t.item).includes(termo) ||
+             t.materiais.some(m => norm(m.nome).includes(termo));
+    });
+
+    $resultados.innerHTML = visiveis.map(t => {
+      const materiais = t.materiais.map(m => {
+        const casou = termo && norm(m.nome).includes(termo);
+        const marca = m.incerto
+          ? ' <span class="incerto" title="Nome cortado na interface do jogo — confirmar">?</span>'
+          : "";
+        return `<li${casou ? ' class="match"' : ""}>` +
+               `<span>${esc(m.nome)}${marca}</span>` +
+               `<span class="qtd">x${m.qtd}</span></li>`;
+      }).join("");
+      return `<div class="card">
+        <button class="thumb" type="button" title="Ampliar">
+          <img src="${esc(t.imagem)}" alt="${esc(t.item)}" loading="lazy">
+        </button>
+        <div class="info">
+          <h2>${esc(t.item)}</h2>
+          <div class="local">📍 ${esc(t.npc)} — ${esc(t.lugar)}</div>
+          <ul>${materiais}</ul>
+        </div>
+      </div>`;
+    }).join("") || '<div id="vazio">Nenhuma troca encontrada.</div>';
+
+    $contagem.textContent = `${visiveis.length} de ${CATALOGO.length} troca(s)`;
+  }
+
+  // Modal de imagem ampliada
+  const $modal = document.getElementById("modal");
+  const $modalImg = $modal.querySelector("img");
+  const $modalLegenda = $modal.querySelector(".legenda");
+
+  $resultados.addEventListener("click", e => {
+    const thumb = e.target.closest(".thumb");
+    if (!thumb) return;
+    const img = thumb.querySelector("img");
+    $modalImg.src = img.src;
+    $modalImg.alt = img.alt;
+    $modalLegenda.textContent = img.alt;
+    $modal.classList.add("aberto");
+  });
+
+  function fecharModal() {
+    $modal.classList.remove("aberto");
+    $modalImg.src = "";
+  }
+  $modal.addEventListener("click", fecharModal);
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && $modal.classList.contains("aberto")) fecharModal();
+  });
+
+  $busca.addEventListener("input", render);
+  $npc.addEventListener("change", render);
+  $lugar.addEventListener("change", render);
+  render();
+</script>
+</body>
+</html>
