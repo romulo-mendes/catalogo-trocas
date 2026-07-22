@@ -195,9 +195,9 @@ const CATALOGO = [
     lugar: "Yantar",
     materiais: [
       { nome: "Língua de Sanguessuga", qtd: 2 },
-      { nome: "Material desconhecido", qtd: 2, incerto: true },
+      { nome: "Feixe de fios", qtd: 2 },
     ],
-    imagem: "Imagens/Sakharov/Captura de tela 2026-07-19 184621.png",
+    imagem: "Imagens/Sakharov/Screenshot_12.png",
   },
   {
     item: "Detector Bear (Urso)",
@@ -208,7 +208,7 @@ const CATALOGO = [
       { nome: "Leitor de DVD", qtd: 1 },
       { nome: "Mão de Hazmatico", qtd: 1 },
     ],
-    imagem: "Imagens/Sakharov/Captura de tela 2026-07-19 184703.png",
+    imagem: "Imagens/Sakharov/Screenshot_1.png",
   },
   {
     item: "Detector Gilka (Galho)",
@@ -220,7 +220,7 @@ const CATALOGO = [
       { nome: "Garras de Escarro", qtd: 1 },
       { nome: "Ímã", qtd: 1 },
     ],
-    imagem: "Imagens/Sakharov/Captura de tela 2026-07-19 185300.png",
+    imagem: "Imagens/Sakharov/Screenshot_3.png",
   },
   {
     item: "Benelli M4",
@@ -231,7 +231,7 @@ const CATALOGO = [
       { nome: "Revista Playboy MAXIM", qtd: 1, incerto: true },
       { nome: "Spray Anti-Baratas", qtd: 1 },
     ],
-    imagem: "Imagens/Sakharov/Captura de tela 2026-07-19 185308.png",
+    imagem: "Imagens/Sakharov/Screenshot_5.png",
   },
   {
     item: "Kit Glock PDW",
@@ -239,10 +239,10 @@ const CATALOGO = [
     lugar: "Yantar",
     materiais: [
       { nome: "Chave de Fenda", qtd: 1 },
-      { nome: "Material desconhecido", qtd: 2, incerto: true },
+      { nome: "Parafusos", qtd: 2 },
       { nome: "Peças de armas", qtd: 1 },
     ],
-    imagem: "Imagens/Sakharov/Captura de tela 2026-07-19 185317.png",
+    imagem: "Imagens/Sakharov/Screenshot_6.png",
   },
   {
     item: "Dosímetro V1",
@@ -250,10 +250,10 @@ const CATALOGO = [
     lugar: "Yantar",
     materiais: [
       { nome: "Alicate Corta-Cabos", qtd: 1 },
-      { nome: "Material desconhecido", qtd: 1, incerto: true },
+      { nome: "Analisador de Gás", qtd: 1 },
       { nome: "Combustível seco", qtd: 2 },
     ],
-    imagem: "Imagens/Sakharov/Captura de tela 2026-07-19 185324.png",
+    imagem: "Imagens/Sakharov/Screenshot_7.png",
   },
   {
     item: "Mascara ZT42",
@@ -583,5 +583,191 @@ const CATALOGO = [
       { nome: "Fita Isolante", qtd: 2 },
     ],
     imagem: "Imagens/Sidorovich/Screenshot_11.png",
+  },
+  {
+    item: "Fuzil de Assalto AKS-74U",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Pasta de Dente", qtd: 1 },
+      { nome: "Shampoo Schaman", qtd: 1 },
+      { nome: "Sabão", qtd: 1 },
+      { nome: "Repelente", qtd: 1 },
+      { nome: "Lanterna", qtd: 1 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_1.png",
+  },
+  {
+    // Título pode ser "S590"/"590" — a fonte do jogo não distingue "5" de "S"
+    item: "Espingarda Mossberg 5590",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Botijão de Propano", qtd: 1 },
+      { nome: "Combustível seco", qtd: 1 },
+      { nome: "Mangueira corrugada", qtd: 1 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_2.png",
+  },
+  {
+    item: "M12 Trench Gun",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Registro Médico", qtd: 1 },
+      { nome: "Tanque de Combustível de Carro", qtd: 1, incerto: true },
+      { nome: "Bateria de Carro", qtd: 1 },
+      { nome: "Combustível", qtd: 1 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_3.png",
+  },
+  {
+    item: "AKS Danificada",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Sucata de Metal", qtd: 1 },
+      { nome: "Furadeira manual", qtd: 1 },
+      { nome: "Chave catraca", qtd: 1 },
+      { nome: "Fita adesiva", qtd: 1 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_4.png",
+  },
+  {
+    item: "Espingarda Itacha 37",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Alicate Corta-Cabos", qtd: 1 },
+      { nome: "Cortador de Unhas", qtd: 1 },
+      { nome: "Tesoura para cortar metal", qtd: 1, incerto: true },
+      { nome: "Chave catraca", qtd: 1 },
+      { nome: "Fita Métrica", qtd: 1 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_5.png",
+  },
+  {
+    item: "Mosin serrado 91/30",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Leitor de DVD", qtd: 1 },
+      { nome: "Televisor", qtd: 1 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_6.png",
+  },
+  {
+    item: "Submetralhadora PP-19-01 Vitya",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "PP-91 Kedr", qtd: 1 },
+      { nome: "Tecido de Fibra de Aramida", qtd: 1, incerto: true },
+      { nome: "Mão de Izlom", qtd: 2 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_7.png",
+  },
+  {
+    item: "PP-2000",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Tecido de Fibra de Aramida", qtd: 1, incerto: true },
+      { nome: "Tecido de Fibra Poliamida", qtd: 1, incerto: true },
+      { nome: "Fita Métrica", qtd: 1 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_8.png",
+  },
+  {
+    item: "Faca Tática",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Cabeça de Tushkano", qtd: 3 },
+      { nome: "Rabo de Blind Dog", qtd: 3 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_9.png",
+  },
+  {
+    item: "Faca para Coturnos",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      // Bug da interface: o tile mostra o ID interno "ratdog_Otrezano_La..." em vez do nome
+      { nome: "ratdog_Otrezano_La", qtd: 2, incerto: true },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_10.png",
+  },
+  {
+    item: "Faca DTs",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Mão de um Snork", qtd: 1 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_11.png",
+  },
+  {
+    item: "Faca de Caçador",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Tentáculos de Bloodsucker", qtd: 1 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_12.png",
+  },
+  {
+    item: "NVG Tier 1 - Monocular (PVS-14)",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Visão térmica militar", qtd: 1, incerto: true },
+      { nome: "Projeto", qtd: 1 },
+      { nome: "Olho de Poltergeist", qtd: 1 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_13.png",
+  },
+  {
+    item: "Traje Zorya",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Tecido de Fibra de Aramida", qtd: 1, incerto: true },
+      { nome: "Paracord", qtd: 1 },
+      { nome: "Pedaço de acrílico", qtd: 1 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_14.png",
+  },
+  {
+    item: "Traje Zorya",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Tecido Fleece", qtd: 1 },
+      { nome: "Paracord", qtd: 1 },
+      { nome: "Pedaço de acrílico", qtd: 1 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_15.png",
+  },
+  {
+    item: "Traje Zorya",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Tecido Ripstop", qtd: 1 },
+      { nome: "Paracord", qtd: 1 },
+      { nome: "Pedaço de acrílico", qtd: 1 },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_16.png",
+  },
+  {
+    item: "Granada de fumaça 40mm",
+    npc: "Petrenko",
+    lugar: "Bazar",
+    materiais: [
+      { nome: "Pólvora Hawk", qtd: 3 },
+      { nome: "Pacote de bicarbonato de sódio", qtd: 1, incerto: true },
+    ],
+    imagem: "Imagens/Petrenko/Screenshot_17.png",
   },
 ];

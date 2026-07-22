@@ -5,7 +5,7 @@ Catálogo pesquisável de trocas de um jogo, montado a partir de screenshots do 
 ## Estrutura
 
 - `Imagens\<NPC>\*.png` — screenshots do menu de trocas. **Convenção**: o nome da pasta é o NPC/comerciante (ex.: `Barmen`); o nome do arquivo é livre (o usuário solta capturas com nome automático — o item é lido de dentro da imagem).
-- `dados.js` — base de dados (`const CATALOGO = [...]`), uma entrada por troca com `item`, `npc`, `lugar` (cidade/região onde o NPC fica — perguntar ao usuário para NPCs novos; conhecidos: Barmen → Rostok, Sakharov → Yantar, Fox/Wolf/Sidorovich → Cordon), `materiais` (`{nome, qtd}`), `imagem` (caminho relativo com `/`). É JS e não JSON porque `index.html` também é aberto via `file://` e `fetch` de JSON local falha.
+- `dados.js` — base de dados (`const CATALOGO = [...]`), uma entrada por troca com `item`, `npc`, `lugar` (cidade/região onde o NPC fica — perguntar ao usuário para NPCs novos; conhecidos: Barmen → Rostok, Sakharov → Yantar, Fox/Wolf/Sidorovich → Cordon, Petrenko → Bazar), `materiais` (`{nome, qtd}`), `imagem` (caminho relativo com `/`). É JS e não JSON porque `index.html` também é aberto via `file://` e `fetch` de JSON local falha.
 - `index.html` — página única (abrir direto no navegador ou via GitHub Pages): busca por item final ou material (ignora acentos/caixa), selects de NPC e de Lugar, cards com thumbnail.
 
 ## Publicação
