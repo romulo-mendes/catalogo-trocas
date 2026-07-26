@@ -770,4 +770,49 @@ const CATALOGO = [
     ],
     imagem: "Imagens/Petrenko/Screenshot_17.png",
   },
+  {
+    item: "Fuzil de precisão M40",
+    npc: "Coruja",
+    lugar: "Yanov",
+    materiais: [
+      { nome: "Fonte de Alimentação", qtd: 1 },
+      { nome: "Peças de armas", qtd: 1 },
+      { nome: "\"MEDUSA\"", qtd: 1 },
+    ],
+    imagem: "Imagens/Coruja/Screenshot_1.png",
+  },
+  {
+    item: "Fuzil de Assalto AK Tático",
+    npc: "Coruja",
+    lugar: "Yanov",
+    materiais: [
+      { nome: "\"CLARÃO\"", qtd: 1 },
+      { nome: "Tentáculos de Bloodsucker", qtd: 1 },
+      { nome: "Cabeça de Psy Dog", qtd: 2 },
+    ],
+    imagem: "Imagens/Coruja/Screenshot_2.png",
+  },
+  {
+    item: "RPK-16",
+    npc: "Coruja",
+    lugar: "Yanov",
+    materiais: [
+      { nome: "Cérebro de Psy Sucker", qtd: 1 },
+      { nome: "Cabeça de Psy Dog", qtd: 3 },
+      // A fonte do jogo não distingue bem "R"/"A"/"B" — pode ser "Unidade SAS"
+      { nome: "Unidade SRS", qtd: 1, incerto: true },
+    ],
+    imagem: "Imagens/Coruja/Screenshot_3.png",
+  },
+  {
+    item: "Fuzil de Precisão VSK-94",
+    npc: "Coruja",
+    lugar: "Yanov",
+    materiais: [
+      { nome: "Laptop reforçado", qtd: 1 },
+      { nome: "Peças metálicas", qtd: 2 },
+      { nome: "Cabeça de Tark", qtd: 1 },
+    ],
+    imagem: "Imagens/Coruja/Screenshot_19.png",
+  },
 ];
