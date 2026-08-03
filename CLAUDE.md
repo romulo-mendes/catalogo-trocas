@@ -23,6 +23,8 @@ Valores permitidos de `categoria` (a ordem do select vive em `ORDEM_CATEGORIAS`,
 
 O site é servido pelo GitHub Pages a partir da branch `main` (raiz): https://romulo-mendes.github.io/catalogo-trocas/. Todo `git push` na `main` republica em ~1 minuto — após atualizar o catálogo, commitar e dar push. O servidor é Linux: os caminhos `imagem` em `dados.js` precisam bater com os arquivos em maiúsculas/minúsculas exatas.
 
+O GitHub Pages serve `dados.js` com `Cache-Control: max-age=600`, então o navegador continua usando a cópia antiga por até 10 min depois do push (sintoma: o site novo carrega mas sem as trocas novas). Por isso o `index.html` carrega `dados.js?v=<data>` — **bumpar essa data toda vez que `dados.js` mudar**, no mesmo commit.
+
 ## Fluxo de atualização (quando chegarem novos prints)
 
 1. O usuário solta os novos screenshots em `Imagens\<NPC>\` e pede para atualizar o catálogo.
