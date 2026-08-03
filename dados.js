@@ -1,10 +1,12 @@
 // Base de dados do catálogo de trocas.
 // Uma entrada por troca; `incerto: true` marca nome cortado na interface do jogo (confirmar).
+// `categoria`: Armas | Roupas | Acessórios | Proteção / Máscaras | Detectores e Dispositivos | Outros
 const CATALOGO = [
   {
     item: "Fort-17",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Armas",
     materiais: [
       { nome: "Pacotes de café", qtd: 1 },
       { nome: "Porcas de parafuso", qtd: 1 },
@@ -15,6 +17,7 @@ const CATALOGO = [
     item: "APS Stechkin",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Armas",
     materiais: [
       { nome: "Cloro", qtd: 1 },
       { nome: "Água Sanitária", qtd: 1 },
@@ -25,6 +28,7 @@ const CATALOGO = [
     item: "Pistola FN57",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Armas",
     materiais: [
       { nome: "Spray Anti-Baratas", qtd: 1 },
       { nome: "Repelente", qtd: 1 },
@@ -35,6 +39,7 @@ const CATALOGO = [
     item: "Águia Negra",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Armas",
     materiais: [
       { nome: "Vaso Antigo", qtd: 1 },
       { nome: "Livro Antigo Danificado", qtd: 1 },
@@ -46,6 +51,7 @@ const CATALOGO = [
     item: "Taurus Raging Bull",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Armas",
     materiais: [
       { nome: "Frasco de Solução Salina", qtd: 1 },
       { nome: "Cartela de Remédios Preservada", qtd: 1, incerto: true },
@@ -57,6 +63,7 @@ const CATALOGO = [
     item: "Pistola Automática OTs-33",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Armas",
     materiais: [
       { nome: "Plugue em forma de T", qtd: 1, incerto: true },
       { nome: "VHS", qtd: 1 },
@@ -67,6 +74,7 @@ const CATALOGO = [
     item: "Fuzil de Assalto AKS-74U",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Armas",
     materiais: [
       { nome: "Termômetro Analógico", qtd: 1 },
       { nome: "Tubo de silicone", qtd: 1 },
@@ -78,6 +86,7 @@ const CATALOGO = [
     item: "MP5A2",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Armas",
     materiais: [
       { nome: "Pedaço de acrílico", qtd: 1 },
       { nome: "GreenBat lithium battery", qtd: 1, incerto: true },
@@ -89,6 +98,7 @@ const CATALOGO = [
     item: "Submetralhadora Saiga-9",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Armas",
     materiais: [
       { nome: "Combustível seco", qtd: 1 },
       { nome: "Analisador de Gás", qtd: 1 },
@@ -100,6 +110,7 @@ const CATALOGO = [
     item: "SPAS-12 Semi-Auto",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Armas",
     materiais: [
       { nome: "Ímã", qtd: 1 },
       { nome: "Controlador de motor", qtd: 1 },
@@ -110,6 +121,7 @@ const CATALOGO = [
     item: "SPAS-12 Pump",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Armas",
     materiais: [
       { nome: "Tubo corrugado militar", qtd: 1 },
       { nome: "Combustível", qtd: 1 },
@@ -121,6 +133,7 @@ const CATALOGO = [
     item: "Espingarda MP153",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Armas",
     materiais: [
       { nome: "Nuts", qtd: 1 },
       { nome: "Mars", qtd: 1 },
@@ -134,6 +147,7 @@ const CATALOGO = [
     item: "Supressor GemTech Tundra",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Acessórios",
     materiais: [
       { nome: "Projeto", qtd: 1 },
       { nome: "Furadeira", qtd: 1 },
@@ -148,6 +162,7 @@ const CATALOGO = [
     item: "Máscara de Gás MSO",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Proteção / Máscaras",
     materiais: [
       { nome: "Pasta para soldagem a frio", qtd: 1, incerto: true },
       { nome: "Filtro de Água", qtd: 1 },
@@ -158,6 +173,7 @@ const CATALOGO = [
     item: "Mascara XM-40",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Proteção / Máscaras",
     materiais: [
       { nome: "Pasta para soldagem a frio", qtd: 1, incerto: true },
       { nome: "Peças de reposição SE", qtd: 1, incerto: true },
@@ -168,6 +184,7 @@ const CATALOGO = [
     item: "Traje Sunrise",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Roupas",
     materiais: [
       { nome: "Tecido Ripstop", qtd: 1 },
       { nome: "Paracord", qtd: 1 },
@@ -181,6 +198,7 @@ const CATALOGO = [
     item: "Traje Sunrise",
     npc: "Barmen",
     lugar: "Rostok",
+    categoria: "Roupas",
     materiais: [
       { nome: "Tecido Ripstop", qtd: 1 },
       { nome: "Paracord", qtd: 1 },
@@ -193,6 +211,7 @@ const CATALOGO = [
     item: "Detector Otklik (Eco)",
     npc: "Sakharov",
     lugar: "Yantar",
+    categoria: "Detectores e Dispositivos",
     materiais: [
       { nome: "Língua de Sanguessuga", qtd: 2 },
       { nome: "Feixe de fios", qtd: 2 },
@@ -203,6 +222,7 @@ const CATALOGO = [
     item: "Detector Bear (Urso)",
     npc: "Sakharov",
     lugar: "Yantar",
+    categoria: "Detectores e Dispositivos",
     materiais: [
       { nome: "Detector Otklik (Eco)", qtd: 1 },
       { nome: "Leitor de DVD", qtd: 1 },
@@ -214,6 +234,7 @@ const CATALOGO = [
     item: "Detector Gilka (Galho)",
     npc: "Sakharov",
     lugar: "Yantar",
+    categoria: "Detectores e Dispositivos",
     materiais: [
       { nome: "Projeto", qtd: 1 },
       { nome: "Crânio de Putrefato", qtd: 1 },
@@ -226,6 +247,7 @@ const CATALOGO = [
     item: "Benelli M4",
     npc: "Sakharov",
     lugar: "Yantar",
+    categoria: "Armas",
     materiais: [
       { nome: "Vaso Antigo", qtd: 1 },
       { nome: "Revista Playboy MAXIM", qtd: 1, incerto: true },
@@ -237,6 +259,7 @@ const CATALOGO = [
     item: "Kit Glock PDW",
     npc: "Sakharov",
     lugar: "Yantar",
+    categoria: "Acessórios",
     materiais: [
       { nome: "Chave de Fenda", qtd: 1 },
       { nome: "Parafusos", qtd: 2 },
@@ -248,6 +271,7 @@ const CATALOGO = [
     item: "Dosímetro V1",
     npc: "Sakharov",
     lugar: "Yantar",
+    categoria: "Detectores e Dispositivos",
     materiais: [
       { nome: "Alicate Corta-Cabos", qtd: 1 },
       { nome: "Analisador de Gás", qtd: 1 },
@@ -259,6 +283,7 @@ const CATALOGO = [
     item: "Mascara ZT42",
     npc: "Fox",
     lugar: "Cordon",
+    categoria: "Proteção / Máscaras",
     materiais: [
       { nome: "Máscara de Gás GP-5", qtd: 1 },
       { nome: "Pata de Gato Bayun", qtd: 4 },
@@ -270,6 +295,7 @@ const CATALOGO = [
     item: "Máscara de Gás CN-3a",
     npc: "Fox",
     lugar: "Cordon",
+    categoria: "Proteção / Máscaras",
     materiais: [
       { nome: "Máscara de Gás GP-5", qtd: 1 },
       { nome: "Kit de Costura", qtd: 1 },
@@ -281,6 +307,7 @@ const CATALOGO = [
     item: "Mossberg Maverick HS12",
     npc: "Fox",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Parafusos", qtd: 1 },
       { nome: "Chave de Fenda", qtd: 1 },
@@ -292,6 +319,7 @@ const CATALOGO = [
     item: "Espingarda MP-18",
     npc: "Fox",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Pata de Flesh", qtd: 1 },
       { nome: "Pata de Gato Bayun", qtd: 3 },
@@ -303,6 +331,7 @@ const CATALOGO = [
     item: "Espingarda de Ferrolho TOZ-106",
     npc: "Fox",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Pata de Flesh", qtd: 2 },
       { nome: "Pata de Gato Bayun", qtd: 2 },
@@ -315,6 +344,7 @@ const CATALOGO = [
     item: "MP 27M",
     npc: "Fox",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Rabo de Blind Dog", qtd: 3 },
       { nome: "Spray Anti-Baratas", qtd: 1 },
@@ -325,6 +355,7 @@ const CATALOGO = [
     item: "Carabina de repetição",
     npc: "Fox",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Pote de Pepino", qtd: 1 },
       { nome: "Cebola", qtd: 1 },
@@ -336,6 +367,7 @@ const CATALOGO = [
     item: "Submetralhadora Viper-5",
     npc: "Wolf",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Sucata de Metal", qtd: 1 },
       { nome: "WD40", qtd: 1 },
@@ -347,6 +379,7 @@ const CATALOGO = [
     item: "Espingarda Higgins Model 583",
     npc: "Wolf",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Óleo em Spray para Armas", qtd: 1, incerto: true },
       { nome: "Graxa Industrial", qtd: 1 },
@@ -357,6 +390,7 @@ const CATALOGO = [
     item: "UZI",
     npc: "Wolf",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Papel Higiênico", qtd: 1 },
       { nome: "Revista Playboy MAXIM", qtd: 1, incerto: true },
@@ -367,6 +401,7 @@ const CATALOGO = [
     item: "Submetralhadora MP-40",
     npc: "Wolf",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Água Sanitária", qtd: 1 },
       { nome: "Limpador de Ralos de Cha", qtd: 1, incerto: true },
@@ -378,6 +413,7 @@ const CATALOGO = [
     item: "CR-61 Skorpion",
     npc: "Wolf",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Capacitores", qtd: 1 },
       { nome: "Lâmpada", qtd: 1 },
@@ -389,6 +425,7 @@ const CATALOGO = [
     item: "Traje do Recruta",
     npc: "Wolf",
     lugar: "Cordon",
+    categoria: "Roupas",
     materiais: [
       { nome: "Tecido de Fibra Poliamida", qtd: 1, incerto: true },
       { nome: "Ferramentas Médicas", qtd: 1 },
@@ -399,6 +436,7 @@ const CATALOGO = [
     item: "Traje do Recruta",
     npc: "Wolf",
     lugar: "Cordon",
+    categoria: "Roupas",
     materiais: [
       { nome: "Tecido Fleece", qtd: 1 },
       { nome: "Ferramentas Médicas", qtd: 1 },
@@ -409,6 +447,7 @@ const CATALOGO = [
     item: "Traje do Recruta",
     npc: "Wolf",
     lugar: "Cordon",
+    categoria: "Roupas",
     materiais: [
       { nome: "Tecido de Fibra de Aramida", qtd: 1, incerto: true },
       { nome: "Ferramentas Médicas", qtd: 1 },
@@ -419,6 +458,7 @@ const CATALOGO = [
     item: "Deagle Estiloso",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Sabão", qtd: 1 },
       { nome: "Pasta de Dente", qtd: 1 },
@@ -431,6 +471,7 @@ const CATALOGO = [
     item: "Revólver",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Grãos de café", qtd: 1 },
       { nome: "Pacote de Chá (Caixa)", qtd: 1 },
@@ -442,6 +483,7 @@ const CATALOGO = [
     item: "Chaser-13",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Parafusos", qtd: 2 },
       { nome: "Martelo", qtd: 1 },
@@ -453,6 +495,7 @@ const CATALOGO = [
     item: "BK-12",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Casco de Javali", qtd: 3 },
       { nome: "Mão de Zumbi", qtd: 3 },
@@ -464,6 +507,7 @@ const CATALOGO = [
     item: "Espingarda Izh-43",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Casco de Javali", qtd: 3 },
       { nome: "Pata de Gato Bayun", qtd: 2 },
@@ -475,6 +519,7 @@ const CATALOGO = [
     item: "Traje de Novato",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Roupas",
     materiais: [
       { nome: "Rabo de Blind Dog", qtd: 4 },
       { nome: "Lâmpada", qtd: 2 },
@@ -485,6 +530,7 @@ const CATALOGO = [
     item: "Pistola Mauser C96 «Schnellfeuer»",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Armas",
     materiais: [
       { nome: "Seringa Descartável", qtd: 1 },
       { nome: "Ferramentas Médicas", qtd: 2 },
@@ -497,6 +543,7 @@ const CATALOGO = [
     item: "Máscara de Gás GP-5",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Proteção / Máscaras",
     materiais: [
       { nome: "Rabo de Blind Dog", qtd: 3 },
       { nome: "Mangueira corrugada", qtd: 1 },
@@ -507,6 +554,7 @@ const CATALOGO = [
     item: "Detector Otklik (Eco)",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Detectores e Dispositivos",
     materiais: [
       { nome: "Detector 'Resposta' Quebrado", qtd: 1 },
       { nome: "Feixe de fios", qtd: 2 },
@@ -518,6 +566,7 @@ const CATALOGO = [
     item: "Detector Bear (Urso)",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Detectores e Dispositivos",
     materiais: [
       { nome: "Detector Otklik (Eco)", qtd: 1 },
       { nome: "\"ESPINHO\"", qtd: 1 },
@@ -528,6 +577,7 @@ const CATALOGO = [
     item: "Traje de Novato",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Roupas",
     materiais: [
       { nome: "Cabeça de Tushkano", qtd: 4 },
       { nome: "Parafusos", qtd: 2 },
@@ -538,6 +588,7 @@ const CATALOGO = [
     item: "Traje de Novato",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Roupas",
     materiais: [
       { nome: "Pata de Flesh", qtd: 4 },
       { nome: "Shampoo Schaman", qtd: 2 },
@@ -548,6 +599,7 @@ const CATALOGO = [
     item: "Traje de Novato",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Roupas",
     materiais: [
       { nome: "Mão de Zumbi", qtd: 4 },
       { nome: "Parafusos", qtd: 2 },
@@ -558,6 +610,7 @@ const CATALOGO = [
     item: "Traje de Novato",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Roupas",
     materiais: [
       { nome: "Casco de Javali", qtd: 4 },
       { nome: "Porcas de parafuso", qtd: 2 },
@@ -568,6 +621,7 @@ const CATALOGO = [
     item: "Traje de Novato",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Roupas",
     materiais: [
       { nome: "Mão de Izlom", qtd: 4 },
       { nome: "Pasta de Dente", qtd: 2 },
@@ -578,6 +632,7 @@ const CATALOGO = [
     item: "Traje de Novato",
     npc: "Sidorovich",
     lugar: "Cordon",
+    categoria: "Roupas",
     materiais: [
       { nome: "Pata de Gato Bayun", qtd: 4 },
       { nome: "Fita Isolante", qtd: 2 },
@@ -588,6 +643,7 @@ const CATALOGO = [
     item: "Fuzil de Assalto AKS-74U",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Armas",
     materiais: [
       { nome: "Pasta de Dente", qtd: 1 },
       { nome: "Shampoo Schaman", qtd: 1 },
@@ -602,6 +658,7 @@ const CATALOGO = [
     item: "Espingarda Mossberg 5590",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Armas",
     materiais: [
       { nome: "Botijão de Propano", qtd: 1 },
       { nome: "Combustível seco", qtd: 1 },
@@ -613,6 +670,7 @@ const CATALOGO = [
     item: "M12 Trench Gun",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Armas",
     materiais: [
       { nome: "Registro Médico", qtd: 1 },
       { nome: "Tanque de Combustível de Carro", qtd: 1, incerto: true },
@@ -625,6 +683,7 @@ const CATALOGO = [
     item: "AKS Danificada",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Armas",
     materiais: [
       { nome: "Sucata de Metal", qtd: 1 },
       { nome: "Furadeira manual", qtd: 1 },
@@ -637,6 +696,7 @@ const CATALOGO = [
     item: "Espingarda Itacha 37",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Armas",
     materiais: [
       { nome: "Alicate Corta-Cabos", qtd: 1 },
       { nome: "Cortador de Unhas", qtd: 1 },
@@ -650,6 +710,7 @@ const CATALOGO = [
     item: "Mosin serrado 91/30",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Armas",
     materiais: [
       { nome: "Leitor de DVD", qtd: 1 },
       { nome: "Televisor", qtd: 1 },
@@ -660,6 +721,7 @@ const CATALOGO = [
     item: "Submetralhadora PP-19-01 Vitya",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Armas",
     materiais: [
       { nome: "PP-91 Kedr", qtd: 1 },
       { nome: "Tecido de Fibra de Aramida", qtd: 1, incerto: true },
@@ -671,6 +733,7 @@ const CATALOGO = [
     item: "PP-2000",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Armas",
     materiais: [
       { nome: "Tecido de Fibra de Aramida", qtd: 1, incerto: true },
       { nome: "Tecido de Fibra Poliamida", qtd: 1, incerto: true },
@@ -682,6 +745,7 @@ const CATALOGO = [
     item: "Faca Tática",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Armas",
     materiais: [
       { nome: "Cabeça de Tushkano", qtd: 3 },
       { nome: "Rabo de Blind Dog", qtd: 3 },
@@ -692,6 +756,7 @@ const CATALOGO = [
     item: "Faca para Coturnos",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Armas",
     materiais: [
       // Bug da interface: o tile mostra o ID interno "ratdog_Otrezano_La..." em vez do nome
       { nome: "ratdog_Otrezano_La", qtd: 2, incerto: true },
@@ -702,6 +767,7 @@ const CATALOGO = [
     item: "Faca DTs",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Armas",
     materiais: [
       { nome: "Mão de um Snork", qtd: 1 },
     ],
@@ -711,6 +777,7 @@ const CATALOGO = [
     item: "Faca de Caçador",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Armas",
     materiais: [
       { nome: "Tentáculos de Bloodsucker", qtd: 1 },
     ],
@@ -720,6 +787,7 @@ const CATALOGO = [
     item: "NVG Tier 1 - Monocular (PVS-14)",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Acessórios",
     materiais: [
       { nome: "Visão térmica militar", qtd: 1, incerto: true },
       { nome: "Projeto", qtd: 1 },
@@ -731,6 +799,7 @@ const CATALOGO = [
     item: "Traje Zorya",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Roupas",
     materiais: [
       { nome: "Tecido de Fibra de Aramida", qtd: 1, incerto: true },
       { nome: "Paracord", qtd: 1 },
@@ -742,6 +811,7 @@ const CATALOGO = [
     item: "Traje Zorya",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Roupas",
     materiais: [
       { nome: "Tecido Fleece", qtd: 1 },
       { nome: "Paracord", qtd: 1 },
@@ -753,6 +823,7 @@ const CATALOGO = [
     item: "Traje Zorya",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Roupas",
     materiais: [
       { nome: "Tecido Ripstop", qtd: 1 },
       { nome: "Paracord", qtd: 1 },
@@ -764,6 +835,7 @@ const CATALOGO = [
     item: "Granada de fumaça 40mm",
     npc: "Petrenko",
     lugar: "Bazar",
+    categoria: "Outros",
     materiais: [
       { nome: "Pólvora Hawk", qtd: 3 },
       { nome: "Pacote de bicarbonato de sódio", qtd: 1, incerto: true },
@@ -774,6 +846,7 @@ const CATALOGO = [
     item: "Fuzil de precisão M40",
     npc: "Coruja",
     lugar: "Yanov",
+    categoria: "Armas",
     materiais: [
       { nome: "Fonte de Alimentação", qtd: 1 },
       { nome: "Peças de armas", qtd: 1 },
@@ -785,6 +858,7 @@ const CATALOGO = [
     item: "Fuzil de Assalto AK Tático",
     npc: "Coruja",
     lugar: "Yanov",
+    categoria: "Armas",
     materiais: [
       { nome: "\"CLARÃO\"", qtd: 1 },
       { nome: "Tentáculos de Bloodsucker", qtd: 1 },
@@ -796,6 +870,7 @@ const CATALOGO = [
     item: "RPK-16",
     npc: "Coruja",
     lugar: "Yanov",
+    categoria: "Armas",
     materiais: [
       { nome: "Cérebro de Psy Sucker", qtd: 1 },
       { nome: "Cabeça de Psy Dog", qtd: 3 },
@@ -808,11 +883,135 @@ const CATALOGO = [
     item: "Fuzil de Precisão VSK-94",
     npc: "Coruja",
     lugar: "Yanov",
+    categoria: "Armas",
     materiais: [
       { nome: "Laptop reforçado", qtd: 1 },
       { nome: "Peças metálicas", qtd: 2 },
       { nome: "Cabeça de Tark", qtd: 1 },
     ],
     imagem: "Imagens/Coruja/Screenshot_19.png",
+  },
+  {
+    item: "Fuzil SKS Tático",
+    npc: "Barbudo",
+    lugar: "Skadovsk (Zaton)",
+    categoria: "Armas",
+    materiais: [
+      // A fonte do jogo não distingue "S" de "5"; o ícone é um SKS — pode ser "SKS 59/66"
+      { nome: "SK 59/66", qtd: 1, incerto: true },
+      { nome: "Anel", qtd: 1 },
+      { nome: "Revista Playboy MAXIM", qtd: 1, incerto: true },
+    ],
+    imagem: "Imagens/Barbudo/Screenshot_2.png",
+  },
+  {
+    item: "SVDm-2",
+    npc: "Barbudo",
+    lugar: "Skadovsk (Zaton)",
+    categoria: "Armas",
+    materiais: [
+      { nome: "Anel de Ouro", qtd: 1 },
+      // A fonte do jogo não distingue bem "R"/"A"/"B" — pode ser "Unidade SAS"
+      { nome: "Unidade SRS", qtd: 1, incerto: true },
+      { nome: "Olho de Poltergeist", qtd: 1 },
+    ],
+    imagem: "Imagens/Barbudo/Screenshot_3.png",
+  },
+  {
+    item: "M16A1",
+    npc: "Barbudo",
+    lugar: "Skadovsk (Zaton)",
+    categoria: "Armas",
+    materiais: [
+      { nome: "Dente de ouro", qtd: 1 },
+      { nome: "Memória RAM", qtd: 2 },
+      { nome: "Cérebro de Controlador", qtd: 1 },
+    ],
+    imagem: "Imagens/Barbudo/Screenshot_4.png",
+  },
+  {
+    // Título cortado nas duas bordas da tela ("uzil de Assalto AK-74 Modificad")
+    item: "Fuzil de Assalto AK-74 Modificado",
+    npc: "Barbudo",
+    lugar: "Skadovsk (Zaton)",
+    categoria: "Armas",
+    materiais: [
+      { nome: "Tentáculos de Bloodsucker", qtd: 1 },
+      { nome: "\"SERRA\"", qtd: 1 },
+      { nome: "Módulo de Navegação Integrado", qtd: 1, incerto: true },
+      { nome: "Mão de Kartik", qtd: 1 },
+    ],
+    imagem: "Imagens/Barbudo/Screenshot_5.png",
+  },
+  {
+    item: "KS-23",
+    npc: "Barbudo",
+    lugar: "Skadovsk (Zaton)",
+    categoria: "Armas",
+    materiais: [
+      { nome: "\"KAFIO\"", qtd: 1, incerto: true },
+      { nome: "Bateria militar 6-STEN-1", qtd: 1, incerto: true },
+      { nome: "Coração de Quimera", qtd: 1 },
+    ],
+    imagem: "Imagens/Barbudo/Screenshot_6.png",
+  },
+  {
+    item: "Detector Gilka (Galho)",
+    npc: "Barbudo",
+    lugar: "Skadovsk (Zaton)",
+    categoria: "Detectores e Dispositivos",
+    materiais: [
+      { nome: "Detector Bear (Urso)", qtd: 1 },
+      { nome: "\"BATERIA\"", qtd: 1 },
+      { nome: "Ímã", qtd: 1 },
+      { nome: "Capacitores", qtd: 1 },
+    ],
+    imagem: "Imagens/Barbudo/Screenshot_7.png",
+  },
+  {
+    item: "Gravador Milga Fm-301",
+    npc: "Barbudo",
+    lugar: "Skadovsk (Zaton)",
+    categoria: "Detectores e Dispositivos",
+    materiais: [
+      { nome: "Caixa de charutos", qtd: 1 },
+    ],
+    imagem: "Imagens/Barbudo/Screenshot_8.png",
+  },
+  {
+    item: "Mira Kobra",
+    npc: "Barbudo",
+    lugar: "Skadovsk (Zaton)",
+    categoria: "Acessórios",
+    materiais: [
+      { nome: "Chave de fenda", qtd: 1 },
+      { nome: "Unidade flash segura", qtd: 1 },
+      { nome: "Parafusos", qtd: 1 },
+    ],
+    imagem: "Imagens/Barbudo/Screenshot_9.png",
+  },
+  {
+    item: "Mira Baraka",
+    npc: "Barbudo",
+    lugar: "Skadovsk (Zaton)",
+    categoria: "Acessórios",
+    materiais: [
+      { nome: "Chave de Fenda", qtd: 1 },
+      { nome: "Pendrive Militar", qtd: 1 },
+      { nome: "Porcas de parafuso", qtd: 1 },
+    ],
+    imagem: "Imagens/Barbudo/Screenshot_10.png",
+  },
+  {
+    item: "Capacete de enduro",
+    npc: "Barbudo",
+    lugar: "Skadovsk (Zaton)",
+    categoria: "Proteção / Máscaras",
+    materiais: [
+      { nome: "Cobertura de capacete de enduro", qtd: 1, incerto: true },
+      { nome: "Protetor bucal de capacete de enduro", qtd: 1, incerto: true },
+      { nome: "Mão de Izlom", qtd: 2 },
+    ],
+    imagem: "Imagens/Barbudo/Screenshot_11.png",
   },
 ];

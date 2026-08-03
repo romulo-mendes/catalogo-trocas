@@ -5,8 +5,19 @@ Catálogo pesquisável de trocas de um jogo, montado a partir de screenshots do 
 ## Estrutura
 
 - `Imagens\<NPC>\*.png` — screenshots do menu de trocas. **Convenção**: o nome da pasta é o NPC/comerciante (ex.: `Barmen`); o nome do arquivo é livre (o usuário solta capturas com nome automático — o item é lido de dentro da imagem).
-- `dados.js` — base de dados (`const CATALOGO = [...]`), uma entrada por troca com `item`, `npc`, `lugar` (cidade/região onde o NPC fica — perguntar ao usuário para NPCs novos; conhecidos: Barmen → Rostok, Sakharov → Yantar, Fox/Wolf/Sidorovich → Cordon, Petrenko → Bazar, Coruja → Yanov), `materiais` (`{nome, qtd}`), `imagem` (caminho relativo com `/`). É JS e não JSON porque `index.html` também é aberto via `file://` e `fetch` de JSON local falha.
-- `index.html` — página única (abrir direto no navegador ou via GitHub Pages): busca por item final ou material (ignora acentos/caixa), selects de NPC e de Lugar, cards com thumbnail.
+- `dados.js` — base de dados (`const CATALOGO = [...]`), uma entrada por troca com `item`, `npc`, `lugar` (cidade/região onde o NPC fica — perguntar ao usuário para NPCs novos; conhecidos: Barmen → Rostok, Sakharov → Yantar, Fox/Wolf/Sidorovich → Cordon, Petrenko → Bazar, Coruja → Yanov, Barbudo → Skadovsk (Zaton)), `categoria` (ver abaixo), `materiais` (`{nome, qtd}`), `imagem` (caminho relativo com `/`). É JS e não JSON porque `index.html` também é aberto via `file://` e `fetch` de JSON local falha.
+- `index.html` — página única (abrir direto no navegador ou via GitHub Pages): busca por item final ou material (ignora acentos/caixa), selects de NPC, Lugar e Categoria, cards com thumbnail.
+
+## Categorias
+
+Valores permitidos de `categoria` (a ordem do select vive em `ORDEM_CATEGORIAS`, em `index.html` — categoria nova que não esteja lá aparece no fim da lista):
+
+- **Armas** — armas de fogo e corpo a corpo (facas entram aqui).
+- **Roupas** — trajes e coletes.
+- **Proteção / Máscaras** — máscaras de gás e capacetes (separados de Roupas por decisão do usuário).
+- **Acessórios** — acessórios de arma e equipamento: miras, supressores, NVG, kits de conversão.
+- **Detectores e Dispositivos** — detectores de artefato, dosímetros e eletrônicos em geral.
+- **Outros** — o que não se encaixar (ex.: granadas).
 
 ## Publicação
 
@@ -17,7 +28,7 @@ O site é servido pelo GitHub Pages a partir da branch `main` (raiz): https://ro
 1. O usuário solta os novos screenshots em `Imagens\<NPC>\` e pede para atualizar o catálogo.
 2. Listar as imagens no disco e comparar com os caminhos `imagem` já registrados em `dados.js` — ler **apenas** as imagens novas.
 3. Ler cada imagem nova com a tool Read (visualmente): extrair o item final (título central), os materiais e quantidades da seção "Requisitos" (tiles vermelhos, "xN" em verde). Para rótulos pequenos/ambíguos, recortar e ampliar a faixa de requisitos com ffmpeg (`crop=iw:200:0:ih-210,scale=iw*3:-1:flags=lanczos`) e ler o recorte.
-4. Adicionar as entradas em `dados.js`; se o NPC for novo, perguntar ao usuário em que lugar ele fica. Nada a mudar em `index.html` (selects e busca são derivados dos dados). Ao final, commitar e dar `git push` para publicar no site.
+4. Adicionar as entradas em `dados.js` com a `categoria` de cada item; se o NPC for novo, perguntar ao usuário em que lugar ele fica. Nada a mudar em `index.html` (selects e busca são derivados dos dados). Ao final, commitar e dar `git push` para publicar no site.
 
 ## Armadilhas
 
