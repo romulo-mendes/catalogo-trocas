@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Catálogo de Trocas</title>
+<title>Bancada de Craft</title>
 <style>
   :root {
     --bg: #1a1a1a;
     --panel: #242424;
     --card: #2b2b2b;
-    --tile: #6e2b2b;
+    --tile: #3a3a3a;
     --text: #e8e8e8;
     --muted: #9a9a9a;
-    --accent: #a8d34a;
+    --accent: #4ac3d3;
     --highlight: #d3b04a;
   }
   * { box-sizing: border-box; }
@@ -30,19 +30,15 @@
     z-index: 10;
     box-shadow: 0 2px 8px rgba(0,0,0,.5);
   }
-  nav { margin-bottom: 4px; font-size: 13px; }
-  nav a { color: var(--accent); }
   header h1 {
-    margin: 0 0 12px;
+    margin: 0 0 4px;
     font-size: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
-  .controles {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
+  nav { margin-bottom: 12px; font-size: 13px; }
+  nav a { color: var(--accent); }
+  .controles { display: flex; gap: 10px; flex-wrap: wrap; }
   #busca {
     flex: 1;
     min-width: 220px;
@@ -55,7 +51,7 @@
     outline: none;
   }
   #busca:focus { border-color: var(--accent); }
-  #filtro-npc, #filtro-lugar, #filtro-categoria {
+  #filtro-lugar, #filtro-categoria {
     padding: 10px 14px;
     font-size: 15px;
     background: #171717;
@@ -63,10 +59,16 @@
     border: 1px solid #3a3a3a;
     border-radius: 6px;
   }
-  #contagem {
-    padding: 8px 20px 0;
-    color: var(--muted);
+  #contagem { padding: 8px 20px 0; color: var(--muted); font-size: 13px; }
+  .aviso {
+    margin: 12px 20px 0;
+    padding: 10px 14px;
+    background: #2b2620;
+    border: 1px solid #5a4a2a;
+    border-radius: 6px;
+    color: var(--highlight);
     font-size: 13px;
+    line-height: 1.5;
   }
   main {
     padding: 16px 20px 40px;
@@ -90,22 +92,11 @@
     background: #101010;
     cursor: zoom-in;
   }
-  .card img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: contain;
-    display: block;
-  }
+  .card img { width: 100%; max-height: 200px; object-fit: contain; display: block; }
   .card .info { padding: 12px 14px 14px; }
-  .card h2 {
-    margin: 0;
-    font-size: 18px;
-  }
-  .card .local {
-    color: var(--accent);
-    font-size: 13px;
-    margin: 2px 0 10px;
-  }
+  .card h2 { margin: 0; font-size: 18px; }
+  .card h2.sem-nome { color: var(--muted); font-style: italic; font-size: 16px; }
+  .card .local { color: var(--accent); font-size: 13px; margin: 2px 0 8px; }
   .card .categoria {
     display: inline-block;
     background: #383838;
@@ -118,37 +109,22 @@
     color: var(--muted);
     margin-bottom: 8px;
   }
-  .card ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
+  .card ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 4px; }
   .card li {
     background: var(--tile);
     border-radius: 4px;
-    padding: 5px 10px;
+    padding: 4px 10px 4px 4px;
     font-size: 14px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     gap: 8px;
   }
-  .card li.match {
-    outline: 2px solid var(--highlight);
-  }
-  .card li .qtd { color: var(--accent); white-space: nowrap; }
-  .incerto {
-    color: var(--highlight);
-    cursor: help;
-  }
-  #vazio {
-    grid-column: 1 / -1;
-    text-align: center;
-    color: var(--muted);
-    padding: 40px 0;
-  }
+  .card li.match { outline: 2px solid var(--highlight); }
+  .card li img { width: 34px; height: 34px; object-fit: contain; border-radius: 3px; background: #202020; flex: none; }
+  .card li .nome { flex: 1; }
+  .card li .nome.sem-nome { color: var(--muted); font-style: italic; font-size: 13px; }
+  .card li .qtd { color: var(--accent); white-space: nowrap; font-weight: 600; }
+  #vazio { grid-column: 1 / -1; text-align: center; color: var(--muted); padding: 40px 0; }
   #modal {
     display: none;
     position: fixed;
@@ -163,17 +139,8 @@
     cursor: zoom-out;
   }
   #modal.aberto { display: flex; }
-  #modal img {
-    max-width: 95vw;
-    max-height: 85vh;
-    object-fit: contain;
-    border-radius: 6px;
-    box-shadow: 0 8px 40px rgba(0,0,0,.8);
-  }
-  #modal .legenda {
-    color: var(--text);
-    font-size: 15px;
-  }
+  #modal img { max-width: 95vw; max-height: 85vh; object-fit: contain; border-radius: 6px; box-shadow: 0 8px 40px rgba(0,0,0,.8); }
+  #modal .legenda { color: var(--text); font-size: 15px; }
   #modal .fechar {
     position: fixed;
     top: 12px;
@@ -190,13 +157,10 @@
 </head>
 <body>
 <header>
-  <nav><a href="craft.html">Bancada de Craft &rarr;</a></nav>
-  <h1>Catálogo de Trocas</h1>
+  <nav><a href="index.html">&larr; Trocas com NPCs</a></nav>
+  <h1>Bancada de Craft</h1>
   <div class="controles">
-    <input id="busca" type="search" placeholder="Buscar item final ou material..." autofocus>
-    <select id="filtro-npc">
-      <option value="">Todos os NPCs</option>
-    </select>
+    <input id="busca" type="search" placeholder="Buscar receita ou ingrediente..." autofocus>
     <select id="filtro-lugar">
       <option value="">Todos os lugares</option>
     </select>
@@ -205,6 +169,7 @@
     </select>
   </div>
 </header>
+<div class="aviso" id="aviso"></div>
 <div id="contagem"></div>
 <main id="resultados"></main>
 <div id="modal">
@@ -213,23 +178,15 @@
   <div class="legenda"></div>
 </div>
 
-<!-- ?v= força o navegador a rebaixar o cache; bumpar a data a cada atualização de dados.js -->
-<script src="dados.js?v=2026-08-06"></script>
+<script src="craft.js?v=2026-08-06"></script>
 <script>
   const $busca = document.getElementById("busca");
-  const $npc = document.getElementById("filtro-npc");
   const $lugar = document.getElementById("filtro-lugar");
   const $categoria = document.getElementById("filtro-categoria");
   const $resultados = document.getElementById("resultados");
   const $contagem = document.getElementById("contagem");
 
-  // Remove acentos e baixa a caixa para busca tolerante
-  function norm(s) {
-    return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-  }
-
-  // Ordem fixa das categorias no select (mais genérica por último);
-  // categoria nova nos dados que não esteja aqui vai para o fim, em ordem alfabética
+  // Mesma ordem de categorias do catálogo de trocas
   const ORDEM_CATEGORIAS = [
     "Armas",
     "Roupas",
@@ -239,7 +196,10 @@
     "Outros",
   ];
 
-  // Popula os dropdowns a partir dos dados; `ordem` fixa a sequência das opções conhecidas
+  function norm(s) {
+    return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  }
+
   function popular($sel, valores, ordem) {
     const unicos = [...new Set(valores)].sort();
     const ordenados = ordem
@@ -255,9 +215,8 @@
       $sel.appendChild(opt);
     });
   }
-  popular($npc, CATALOGO.map(t => t.npc));
-  popular($lugar, CATALOGO.map(t => t.lugar));
-  popular($categoria, CATALOGO.map(t => t.categoria), ORDEM_CATEGORIAS);
+  popular($lugar, CRAFT.map(r => r.lugar));
+  popular($categoria, CRAFT.map(r => r.categoria), ORDEM_CATEGORIAS);
 
   function esc(s) {
     const d = document.createElement("div");
@@ -265,48 +224,64 @@
     return d.innerHTML;
   }
 
+  // Quantos nomes ainda faltam — a bancada não mostra texto, então isso é preenchido à mão
+  const semNome = Object.values(MATERIAIS_CRAFT).filter(m => !m.nome).length;
+  const receitasSemNome = CRAFT.filter(r => !r.item).length;
+  document.getElementById("aviso").innerHTML =
+    `A tela da bancada não mostra nome nenhum — só o modelo do resultado e os ícones dos ingredientes. ` +
+    `Faltam confirmar <strong>${semNome} de ${Object.keys(MATERIAIS_CRAFT).length}</strong> ingredientes e ` +
+    `<strong>${receitasSemNome} de ${CRAFT.length}</strong> nomes de resultado (mostrados em itálico). ` +
+    `As quantidades estão todas conferidas.`;
+
+  // Texto usado na busca: nome quando existe, senão a dica visual
+  function rotulo(o) {
+    return o.nome || o.item || o.dica || "";
+  }
+
   function render() {
     const termo = norm($busca.value.trim());
-    const npcSel = $npc.value;
     const lugarSel = $lugar.value;
     const categoriaSel = $categoria.value;
 
-    const visiveis = CATALOGO.filter(t => {
-      if (npcSel && t.npc !== npcSel) return false;
-      if (lugarSel && t.lugar !== lugarSel) return false;
-      if (categoriaSel && t.categoria !== categoriaSel) return false;
+    const visiveis = CRAFT.filter(r => {
+      if (lugarSel && r.lugar !== lugarSel) return false;
+      if (categoriaSel && r.categoria !== categoriaSel) return false;
       if (!termo) return true;
-      return norm(t.item).includes(termo) ||
-             t.materiais.some(m => norm(m.nome).includes(termo));
+      return norm(rotulo(r)).includes(termo) ||
+             r.ingredientes.some(i => norm(rotulo(MATERIAIS_CRAFT[i.id])).includes(termo));
     });
 
-    $resultados.innerHTML = visiveis.map(t => {
-      const materiais = t.materiais.map(m => {
-        const casou = termo && norm(m.nome).includes(termo);
-        const marca = m.incerto
-          ? ' <span class="incerto" title="Nome cortado na interface do jogo — confirmar">?</span>'
-          : "";
+    $resultados.innerHTML = visiveis.map(r => {
+      const ingredientes = r.ingredientes.map(i => {
+        const m = MATERIAIS_CRAFT[i.id];
+        const casou = termo && norm(rotulo(m)).includes(termo);
+        const nome = m.nome
+          ? `<span class="nome">${esc(m.nome)}</span>`
+          : `<span class="nome sem-nome" title="Nome ainda não confirmado no jogo">${esc(m.dica)} ?</span>`;
         return `<li${casou ? ' class="match"' : ""}>` +
-               `<span>${esc(m.nome)}${marca}</span>` +
-               `<span class="qtd">x${m.qtd}</span></li>`;
+               `<img src="${esc(m.icone)}" alt="" loading="lazy">` +
+               nome +
+               `<span class="qtd">x${i.qtd}</span></li>`;
       }).join("");
+      const titulo = r.item
+        ? `<h2>${esc(r.item)}</h2>`
+        : `<h2 class="sem-nome" title="Nome ainda não confirmado no jogo">${esc(r.dica)} ?</h2>`;
       return `<div class="card">
         <button class="thumb" type="button" title="Ampliar">
-          <img src="${esc(t.imagem)}" alt="${esc(t.item)}" loading="lazy">
+          <img src="${esc(r.imagem)}" alt="${esc(rotulo(r))}" loading="lazy">
         </button>
         <div class="info">
-          <h2>${esc(t.item)}</h2>
-          <div class="local">📍 ${esc(t.npc)} — ${esc(t.lugar)}</div>
-          <div class="categoria">${esc(t.categoria)}</div>
-          <ul>${materiais}</ul>
+          ${titulo}
+          <div class="local">🔧 Bancada de Craft — ${esc(r.lugar)}</div>
+          <div class="categoria">${esc(r.categoria)}</div>
+          <ul>${ingredientes}</ul>
         </div>
       </div>`;
-    }).join("") || '<div id="vazio">Nenhuma troca encontrada.</div>';
+    }).join("") || '<div id="vazio">Nenhuma receita encontrada.</div>';
 
-    $contagem.textContent = `${visiveis.length} de ${CATALOGO.length} troca(s)`;
+    $contagem.textContent = `${visiveis.length} de ${CRAFT.length} receita(s)`;
   }
 
-  // Modal de imagem ampliada
   const $modal = document.getElementById("modal");
   const $modalImg = $modal.querySelector("img");
   const $modalLegenda = $modal.querySelector(".legenda");
@@ -331,7 +306,6 @@
   });
 
   $busca.addEventListener("input", render);
-  $npc.addEventListener("change", render);
   $lugar.addEventListener("change", render);
   $categoria.addEventListener("change", render);
   render();

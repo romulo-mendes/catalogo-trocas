@@ -11,7 +11,7 @@ const CATALOGO = [
       { nome: "Pacotes de café", qtd: 1 },
       { nome: "Porcas de parafuso", qtd: 1 },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171232.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171232.png",
   },
   {
     item: "APS Stechkin",
@@ -22,7 +22,7 @@ const CATALOGO = [
       { nome: "Cloro", qtd: 1 },
       { nome: "Água Sanitária", qtd: 1 },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171309.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171309.png",
   },
   {
     item: "Pistola FN57",
@@ -33,7 +33,7 @@ const CATALOGO = [
       { nome: "Spray Anti-Baratas", qtd: 1 },
       { nome: "Repelente", qtd: 1 },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171321.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171321.png",
   },
   {
     item: "Águia Negra",
@@ -45,7 +45,7 @@ const CATALOGO = [
       { nome: "Livro Antigo Danificado", qtd: 1 },
       { nome: "Carta Selada", qtd: 1 },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171333.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171333.png",
   },
   {
     item: "Taurus Raging Bull",
@@ -57,7 +57,7 @@ const CATALOGO = [
       { nome: "Cartela de Remédios Preservada", qtd: 1, incerto: true },
       { nome: "Seringa Descartável", qtd: 1 },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171342.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171342.png",
   },
   {
     item: "Pistola Automática OTs-33",
@@ -68,7 +68,7 @@ const CATALOGO = [
       { nome: "Plugue em forma de T", qtd: 1, incerto: true },
       { nome: "VHS", qtd: 1 },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171400.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171400.png",
   },
   {
     item: "Fuzil de Assalto AKS-74U",
@@ -80,7 +80,7 @@ const CATALOGO = [
       { nome: "Tubo de silicone", qtd: 1 },
       { nome: "Válvula de Pressão", qtd: 1 },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171443.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171443.png",
   },
   {
     item: "MP5A2",
@@ -92,7 +92,7 @@ const CATALOGO = [
       { nome: "GreenBat lithium battery", qtd: 1, incerto: true },
       { nome: "Girotacômetro militar", qtd: 1, incerto: true },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171501.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171501.png",
   },
   {
     item: "Submetralhadora Saiga-9",
@@ -104,7 +104,7 @@ const CATALOGO = [
       { nome: "Analisador de Gás", qtd: 1 },
       { nome: "Pasta para soldagem a frio", qtd: 1, incerto: true },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171511.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171511.png",
   },
   {
     item: "SPAS-12 Semi-Auto",
@@ -115,7 +115,7 @@ const CATALOGO = [
       { nome: "Ímã", qtd: 1 },
       { nome: "Controlador de motor", qtd: 1 },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171523.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171523.png",
   },
   {
     item: "SPAS-12 Pump",
@@ -127,7 +127,7 @@ const CATALOGO = [
       { nome: "Combustível", qtd: 1 },
       { nome: "Limpador de janelas", qtd: 1, incerto: true },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171534.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171534.png",
   },
   {
     item: "Espingarda MP153",
@@ -141,7 +141,7 @@ const CATALOGO = [
       { nome: "Bounty", qtd: 1 },
       { nome: "Amontoado de Açúcar Queimado", qtd: 1, incerto: true },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171549.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171549.png",
   },
   {
     item: "Supressor GemTech Tundra",
@@ -156,7 +156,7 @@ const CATALOGO = [
       { nome: "Pendrive Militar", qtd: 1 },
       { nome: "Orelha de cão", qtd: 4 },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171559.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171559.png",
   },
   {
     item: "Máscara de Gás MSO",
@@ -167,7 +167,7 @@ const CATALOGO = [
       { nome: "Pasta para soldagem a frio", qtd: 1, incerto: true },
       { nome: "Filtro de Água", qtd: 1 },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171608.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171608.png",
   },
   {
     item: "Mascara XM-40",
@@ -178,7 +178,7 @@ const CATALOGO = [
       { nome: "Pasta para soldagem a frio", qtd: 1, incerto: true },
       { nome: "Peças de reposição SE", qtd: 1, incerto: true },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171620.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171620.png",
   },
   {
     item: "Traje Sunrise",
@@ -192,7 +192,7 @@ const CATALOGO = [
       { nome: "Pedaço de acrílico", qtd: 1 },
       { nome: "Fita Isolante", qtd: 1 },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171635.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171635.png",
   },
   {
     item: "Traje Sunrise",
@@ -205,7 +205,7 @@ const CATALOGO = [
       { nome: "Fita Métrica", qtd: 1 },
       { nome: "Pedaço de acrílico", qtd: 1 },
     ],
-    imagem: "Imagens/Barmen/Captura de tela 2026-07-19 171647.png",
+    imagem: "Imagens/Trocas/Barmen/Captura de tela 2026-07-19 171647.png",
   },
   {
     item: "Detector Otklik (Eco)",
@@ -216,7 +216,7 @@ const CATALOGO = [
       { nome: "Língua de Sanguessuga", qtd: 2 },
       { nome: "Feixe de fios", qtd: 2 },
     ],
-    imagem: "Imagens/Sakharov/Screenshot_12.png",
+    imagem: "Imagens/Trocas/Sakharov/Screenshot_12.png",
   },
   {
     item: "Detector Bear (Urso)",
@@ -228,7 +228,7 @@ const CATALOGO = [
       { nome: "Leitor de DVD", qtd: 1 },
       { nome: "Mão de Hazmatico", qtd: 1 },
     ],
-    imagem: "Imagens/Sakharov/Screenshot_1.png",
+    imagem: "Imagens/Trocas/Sakharov/Screenshot_1.png",
   },
   {
     item: "Detector Gilka (Galho)",
@@ -241,7 +241,7 @@ const CATALOGO = [
       { nome: "Garras de Escarro", qtd: 1 },
       { nome: "Ímã", qtd: 1 },
     ],
-    imagem: "Imagens/Sakharov/Screenshot_3.png",
+    imagem: "Imagens/Trocas/Sakharov/Screenshot_3.png",
   },
   {
     item: "Benelli M4",
@@ -253,7 +253,7 @@ const CATALOGO = [
       { nome: "Revista Playboy MAXIM", qtd: 1, incerto: true },
       { nome: "Spray Anti-Baratas", qtd: 1 },
     ],
-    imagem: "Imagens/Sakharov/Screenshot_5.png",
+    imagem: "Imagens/Trocas/Sakharov/Screenshot_5.png",
   },
   {
     item: "Kit Glock PDW",
@@ -265,7 +265,7 @@ const CATALOGO = [
       { nome: "Parafusos", qtd: 2 },
       { nome: "Peças de armas", qtd: 1 },
     ],
-    imagem: "Imagens/Sakharov/Screenshot_6.png",
+    imagem: "Imagens/Trocas/Sakharov/Screenshot_6.png",
   },
   {
     item: "Dosímetro V1",
@@ -277,7 +277,7 @@ const CATALOGO = [
       { nome: "Analisador de Gás", qtd: 1 },
       { nome: "Combustível seco", qtd: 2 },
     ],
-    imagem: "Imagens/Sakharov/Screenshot_7.png",
+    imagem: "Imagens/Trocas/Sakharov/Screenshot_7.png",
   },
   {
     item: "Mascara ZT42",
@@ -289,7 +289,7 @@ const CATALOGO = [
       { nome: "Pata de Gato Bayun", qtd: 4 },
       { nome: "Casco de Javali", qtd: 4 },
     ],
-    imagem: "Imagens/Fox/Captura de tela 2026-07-19 220317.png",
+    imagem: "Imagens/Trocas/Fox/Captura de tela 2026-07-19 220317.png",
   },
   {
     item: "Máscara de Gás CN-3a",
@@ -301,7 +301,7 @@ const CATALOGO = [
       { nome: "Kit de Costura", qtd: 1 },
       { nome: "Mangueira corrugada", qtd: 1 },
     ],
-    imagem: "Imagens/Fox/Captura de tela 2026-07-19 220329.png",
+    imagem: "Imagens/Trocas/Fox/Captura de tela 2026-07-19 220329.png",
   },
   {
     item: "Mossberg Maverick HS12",
@@ -313,7 +313,7 @@ const CATALOGO = [
       { nome: "Chave de Fenda", qtd: 1 },
       { nome: "Capacitores", qtd: 1 },
     ],
-    imagem: "Imagens/Fox/Captura de tela 2026-07-19 220342.png",
+    imagem: "Imagens/Trocas/Fox/Captura de tela 2026-07-19 220342.png",
   },
   {
     item: "Espingarda MP-18",
@@ -324,7 +324,7 @@ const CATALOGO = [
       { nome: "Pata de Flesh", qtd: 1 },
       { nome: "Pata de Gato Bayun", qtd: 3 },
     ],
-    imagem: "Imagens/Fox/Captura de tela 2026-07-19 220350.png",
+    imagem: "Imagens/Trocas/Fox/Captura de tela 2026-07-19 220350.png",
   },
   {
     // Título cortado na borda da tela ("TOZ-10..."); TOZ-106 é a única espingarda de ferrolho conhecida
@@ -338,7 +338,7 @@ const CATALOGO = [
       { nome: "Casco de Javali", qtd: 1 },
       { nome: "Mão de Zumbi", qtd: 2 },
     ],
-    imagem: "Imagens/Fox/Captura de tela 2026-07-19 220404.png",
+    imagem: "Imagens/Trocas/Fox/Captura de tela 2026-07-19 220404.png",
   },
   {
     item: "MP 27M",
@@ -349,7 +349,7 @@ const CATALOGO = [
       { nome: "Rabo de Blind Dog", qtd: 3 },
       { nome: "Spray Anti-Baratas", qtd: 1 },
     ],
-    imagem: "Imagens/Fox/Captura de tela 2026-07-19 220410.png",
+    imagem: "Imagens/Trocas/Fox/Captura de tela 2026-07-19 220410.png",
   },
   {
     item: "Carabina de repetição",
@@ -361,7 +361,7 @@ const CATALOGO = [
       { nome: "Cebola", qtd: 1 },
       { nome: "Repolho", qtd: 1 },
     ],
-    imagem: "Imagens/Fox/Captura de tela 2026-07-19 220416.png",
+    imagem: "Imagens/Trocas/Fox/Captura de tela 2026-07-19 220416.png",
   },
   {
     item: "Submetralhadora Viper-5",
@@ -373,7 +373,7 @@ const CATALOGO = [
       { nome: "WD40", qtd: 1 },
       { nome: "Peças de armas", qtd: 1 },
     ],
-    imagem: "Imagens/Wolf/Captura de tela 2026-07-19 230417.png",
+    imagem: "Imagens/Trocas/Wolf/Captura de tela 2026-07-19 230417.png",
   },
   {
     item: "Espingarda Higgins Model 583",
@@ -384,7 +384,7 @@ const CATALOGO = [
       { nome: "Óleo em Spray para Armas", qtd: 1, incerto: true },
       { nome: "Graxa Industrial", qtd: 1 },
     ],
-    imagem: "Imagens/Wolf/Captura de tela 2026-07-19 230426.png",
+    imagem: "Imagens/Trocas/Wolf/Captura de tela 2026-07-19 230426.png",
   },
   {
     item: "UZI",
@@ -395,7 +395,7 @@ const CATALOGO = [
       { nome: "Papel Higiênico", qtd: 1 },
       { nome: "Revista Playboy MAXIM", qtd: 1, incerto: true },
     ],
-    imagem: "Imagens/Wolf/Captura de tela 2026-07-19 230434.png",
+    imagem: "Imagens/Trocas/Wolf/Captura de tela 2026-07-19 230434.png",
   },
   {
     item: "Submetralhadora MP-40",
@@ -407,7 +407,7 @@ const CATALOGO = [
       { nome: "Limpador de Ralos de Cha", qtd: 1, incerto: true },
       { nome: "Alcalino para trocador", qtd: 1, incerto: true },
     ],
-    imagem: "Imagens/Wolf/Captura de tela 2026-07-19 230443.png",
+    imagem: "Imagens/Trocas/Wolf/Captura de tela 2026-07-19 230443.png",
   },
   {
     item: "CR-61 Skorpion",
@@ -419,7 +419,7 @@ const CATALOGO = [
       { nome: "Lâmpada", qtd: 1 },
       { nome: "Fita Isolante", qtd: 1 },
     ],
-    imagem: "Imagens/Wolf/Captura de tela 2026-07-19 230455.png",
+    imagem: "Imagens/Trocas/Wolf/Captura de tela 2026-07-19 230455.png",
   },
   {
     item: "Traje do Recruta",
@@ -430,7 +430,7 @@ const CATALOGO = [
       { nome: "Tecido de Fibra Poliamida", qtd: 1, incerto: true },
       { nome: "Ferramentas Médicas", qtd: 1 },
     ],
-    imagem: "Imagens/Wolf/Captura de tela 2026-07-19 230509.png",
+    imagem: "Imagens/Trocas/Wolf/Captura de tela 2026-07-19 230509.png",
   },
   {
     item: "Traje do Recruta",
@@ -441,7 +441,7 @@ const CATALOGO = [
       { nome: "Tecido Fleece", qtd: 1 },
       { nome: "Ferramentas Médicas", qtd: 1 },
     ],
-    imagem: "Imagens/Wolf/Captura de tela 2026-07-19 230517.png",
+    imagem: "Imagens/Trocas/Wolf/Captura de tela 2026-07-19 230517.png",
   },
   {
     item: "Traje do Recruta",
@@ -452,7 +452,7 @@ const CATALOGO = [
       { nome: "Tecido de Fibra de Aramida", qtd: 1, incerto: true },
       { nome: "Ferramentas Médicas", qtd: 1 },
     ],
-    imagem: "Imagens/Wolf/Captura de tela 2026-07-19 230527.png",
+    imagem: "Imagens/Trocas/Wolf/Captura de tela 2026-07-19 230527.png",
   },
   {
     item: "Deagle Estiloso",
@@ -465,7 +465,7 @@ const CATALOGO = [
       { nome: "Papel Higiênico", qtd: 1 },
       { nome: "Mão de Zumbi", qtd: 2 },
     ],
-    imagem: "Imagens/Sidorovich/Captura de tela 2026-07-19 230909.png",
+    imagem: "Imagens/Trocas/Sidorovich/Captura de tela 2026-07-19 230909.png",
   },
   {
     item: "Revólver",
@@ -477,7 +477,7 @@ const CATALOGO = [
       { nome: "Pacote de Chá (Caixa)", qtd: 1 },
       { nome: "Casco de Javali", qtd: 2 },
     ],
-    imagem: "Imagens/Sidorovich/Captura de tela 2026-07-19 230921.png",
+    imagem: "Imagens/Trocas/Sidorovich/Captura de tela 2026-07-19 230921.png",
   },
   {
     item: "Chaser-13",
@@ -489,7 +489,7 @@ const CATALOGO = [
       { nome: "Martelo", qtd: 1 },
       { nome: "Sucata de Metal", qtd: 1 },
     ],
-    imagem: "Imagens/Sidorovich/Captura de tela 2026-07-19 230938.png",
+    imagem: "Imagens/Trocas/Sidorovich/Captura de tela 2026-07-19 230938.png",
   },
   {
     item: "BK-12",
@@ -501,7 +501,7 @@ const CATALOGO = [
       { nome: "Mão de Zumbi", qtd: 3 },
       { nome: "Cabeça de Tushkano", qtd: 2 },
     ],
-    imagem: "Imagens/Sidorovich/Captura de tela 2026-07-19 230954.png",
+    imagem: "Imagens/Trocas/Sidorovich/Captura de tela 2026-07-19 230954.png",
   },
   {
     item: "Espingarda Izh-43",
@@ -512,7 +512,7 @@ const CATALOGO = [
       { nome: "Casco de Javali", qtd: 3 },
       { nome: "Pata de Gato Bayun", qtd: 2 },
     ],
-    imagem: "Imagens/Sidorovich/Captura de tela 2026-07-19 231115.png",
+    imagem: "Imagens/Trocas/Sidorovich/Captura de tela 2026-07-19 231115.png",
   },
   {
     // Imagens/Sidorovich/Screenshot_6.png é duplicata desta troca (mesmo traje e requisitos) — não registrar
@@ -524,7 +524,7 @@ const CATALOGO = [
       { nome: "Rabo de Blind Dog", qtd: 4 },
       { nome: "Lâmpada", qtd: 2 },
     ],
-    imagem: "Imagens/Sidorovich/Captura de tela 2026-07-19 231257.png",
+    imagem: "Imagens/Trocas/Sidorovich/Captura de tela 2026-07-19 231257.png",
   },
   {
     item: "Pistola Mauser C96 «Schnellfeuer»",
@@ -537,7 +537,7 @@ const CATALOGO = [
       { nome: "Frasco de Solução Salina", qtd: 2 },
       { nome: "Mão de Zumbi", qtd: 3 },
     ],
-    imagem: "Imagens/Sidorovich/Screenshot_1.png",
+    imagem: "Imagens/Trocas/Sidorovich/Screenshot_1.png",
   },
   {
     item: "Máscara de Gás GP-5",
@@ -548,7 +548,7 @@ const CATALOGO = [
       { nome: "Rabo de Blind Dog", qtd: 3 },
       { nome: "Mangueira corrugada", qtd: 1 },
     ],
-    imagem: "Imagens/Sidorovich/Screenshot_2.png",
+    imagem: "Imagens/Trocas/Sidorovich/Screenshot_2.png",
   },
   {
     item: "Detector Otklik (Eco)",
@@ -560,7 +560,7 @@ const CATALOGO = [
       { nome: "Feixe de fios", qtd: 2 },
       { nome: "Capacitores", qtd: 2 },
     ],
-    imagem: "Imagens/Sidorovich/Screenshot_3.png",
+    imagem: "Imagens/Trocas/Sidorovich/Screenshot_3.png",
   },
   {
     item: "Detector Bear (Urso)",
@@ -571,7 +571,7 @@ const CATALOGO = [
       { nome: "Detector Otklik (Eco)", qtd: 1 },
       { nome: "\"ESPINHO\"", qtd: 1 },
     ],
-    imagem: "Imagens/Sidorovich/Screenshot_4.png",
+    imagem: "Imagens/Trocas/Sidorovich/Screenshot_4.png",
   },
   {
     item: "Traje de Novato",
@@ -582,7 +582,7 @@ const CATALOGO = [
       { nome: "Cabeça de Tushkano", qtd: 4 },
       { nome: "Parafusos", qtd: 2 },
     ],
-    imagem: "Imagens/Sidorovich/Screenshot_5.png",
+    imagem: "Imagens/Trocas/Sidorovich/Screenshot_5.png",
   },
   {
     item: "Traje de Novato",
@@ -593,7 +593,7 @@ const CATALOGO = [
       { nome: "Pata de Flesh", qtd: 4 },
       { nome: "Shampoo Schaman", qtd: 2 },
     ],
-    imagem: "Imagens/Sidorovich/Screenshot_7.png",
+    imagem: "Imagens/Trocas/Sidorovich/Screenshot_7.png",
   },
   {
     item: "Traje de Novato",
@@ -604,7 +604,7 @@ const CATALOGO = [
       { nome: "Mão de Zumbi", qtd: 4 },
       { nome: "Parafusos", qtd: 2 },
     ],
-    imagem: "Imagens/Sidorovich/Screenshot_8.png",
+    imagem: "Imagens/Trocas/Sidorovich/Screenshot_8.png",
   },
   {
     item: "Traje de Novato",
@@ -615,7 +615,7 @@ const CATALOGO = [
       { nome: "Casco de Javali", qtd: 4 },
       { nome: "Porcas de parafuso", qtd: 2 },
     ],
-    imagem: "Imagens/Sidorovich/Screenshot_9.png",
+    imagem: "Imagens/Trocas/Sidorovich/Screenshot_9.png",
   },
   {
     item: "Traje de Novato",
@@ -626,7 +626,7 @@ const CATALOGO = [
       { nome: "Mão de Izlom", qtd: 4 },
       { nome: "Pasta de Dente", qtd: 2 },
     ],
-    imagem: "Imagens/Sidorovich/Screenshot_10.png",
+    imagem: "Imagens/Trocas/Sidorovich/Screenshot_10.png",
   },
   {
     item: "Traje de Novato",
@@ -637,7 +637,7 @@ const CATALOGO = [
       { nome: "Pata de Gato Bayun", qtd: 4 },
       { nome: "Fita Isolante", qtd: 2 },
     ],
-    imagem: "Imagens/Sidorovich/Screenshot_11.png",
+    imagem: "Imagens/Trocas/Sidorovich/Screenshot_11.png",
   },
   {
     item: "Fuzil de Assalto AKS-74U",
@@ -651,7 +651,7 @@ const CATALOGO = [
       { nome: "Repelente", qtd: 1 },
       { nome: "Lanterna", qtd: 1 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_1.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_1.png",
   },
   {
     // Título pode ser "S590"/"590" — a fonte do jogo não distingue "5" de "S"
@@ -664,7 +664,7 @@ const CATALOGO = [
       { nome: "Combustível seco", qtd: 1 },
       { nome: "Mangueira corrugada", qtd: 1 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_2.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_2.png",
   },
   {
     item: "M12 Trench Gun",
@@ -677,7 +677,7 @@ const CATALOGO = [
       { nome: "Bateria de Carro", qtd: 1 },
       { nome: "Combustível", qtd: 1 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_3.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_3.png",
   },
   {
     item: "AKS Danificada",
@@ -690,7 +690,7 @@ const CATALOGO = [
       { nome: "Chave catraca", qtd: 1 },
       { nome: "Fita adesiva", qtd: 1 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_4.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_4.png",
   },
   {
     item: "Espingarda Itacha 37",
@@ -704,7 +704,7 @@ const CATALOGO = [
       { nome: "Chave catraca", qtd: 1 },
       { nome: "Fita Métrica", qtd: 1 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_5.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_5.png",
   },
   {
     item: "Mosin serrado 91/30",
@@ -715,7 +715,7 @@ const CATALOGO = [
       { nome: "Leitor de DVD", qtd: 1 },
       { nome: "Televisor", qtd: 1 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_6.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_6.png",
   },
   {
     item: "Submetralhadora PP-19-01 Vitya",
@@ -727,7 +727,7 @@ const CATALOGO = [
       { nome: "Tecido de Fibra de Aramida", qtd: 1, incerto: true },
       { nome: "Mão de Izlom", qtd: 2 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_7.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_7.png",
   },
   {
     item: "PP-2000",
@@ -739,7 +739,7 @@ const CATALOGO = [
       { nome: "Tecido de Fibra Poliamida", qtd: 1, incerto: true },
       { nome: "Fita Métrica", qtd: 1 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_8.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_8.png",
   },
   {
     item: "Faca Tática",
@@ -750,7 +750,7 @@ const CATALOGO = [
       { nome: "Cabeça de Tushkano", qtd: 3 },
       { nome: "Rabo de Blind Dog", qtd: 3 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_9.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_9.png",
   },
   {
     item: "Faca para Coturnos",
@@ -761,7 +761,7 @@ const CATALOGO = [
       // Bug da interface: o tile mostra o ID interno "ratdog_Otrezano_La..." em vez do nome
       { nome: "ratdog_Otrezano_La", qtd: 2, incerto: true },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_10.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_10.png",
   },
   {
     item: "Faca DTs",
@@ -771,7 +771,7 @@ const CATALOGO = [
     materiais: [
       { nome: "Mão de um Snork", qtd: 1 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_11.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_11.png",
   },
   {
     item: "Faca de Caçador",
@@ -781,7 +781,7 @@ const CATALOGO = [
     materiais: [
       { nome: "Tentáculos de Bloodsucker", qtd: 1 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_12.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_12.png",
   },
   {
     item: "NVG Tier 1 - Monocular (PVS-14)",
@@ -793,7 +793,7 @@ const CATALOGO = [
       { nome: "Projeto", qtd: 1 },
       { nome: "Olho de Poltergeist", qtd: 1 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_13.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_13.png",
   },
   {
     item: "Traje Zorya",
@@ -805,7 +805,7 @@ const CATALOGO = [
       { nome: "Paracord", qtd: 1 },
       { nome: "Pedaço de acrílico", qtd: 1 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_14.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_14.png",
   },
   {
     item: "Traje Zorya",
@@ -817,7 +817,7 @@ const CATALOGO = [
       { nome: "Paracord", qtd: 1 },
       { nome: "Pedaço de acrílico", qtd: 1 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_15.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_15.png",
   },
   {
     item: "Traje Zorya",
@@ -829,7 +829,7 @@ const CATALOGO = [
       { nome: "Paracord", qtd: 1 },
       { nome: "Pedaço de acrílico", qtd: 1 },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_16.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_16.png",
   },
   {
     item: "Granada de fumaça 40mm",
@@ -840,7 +840,7 @@ const CATALOGO = [
       { nome: "Pólvora Hawk", qtd: 3 },
       { nome: "Pacote de bicarbonato de sódio", qtd: 1, incerto: true },
     ],
-    imagem: "Imagens/Petrenko/Screenshot_17.png",
+    imagem: "Imagens/Trocas/Petrenko/Screenshot_17.png",
   },
   {
     item: "Fuzil de precisão M40",
@@ -852,7 +852,7 @@ const CATALOGO = [
       { nome: "Peças de armas", qtd: 1 },
       { nome: "\"MEDUSA\"", qtd: 1 },
     ],
-    imagem: "Imagens/Coruja/Screenshot_1.png",
+    imagem: "Imagens/Trocas/Coruja/Screenshot_1.png",
   },
   {
     item: "Fuzil de Assalto AK Tático",
@@ -864,7 +864,7 @@ const CATALOGO = [
       { nome: "Tentáculos de Bloodsucker", qtd: 1 },
       { nome: "Cabeça de Psy Dog", qtd: 2 },
     ],
-    imagem: "Imagens/Coruja/Screenshot_2.png",
+    imagem: "Imagens/Trocas/Coruja/Screenshot_2.png",
   },
   {
     item: "RPK-16",
@@ -877,7 +877,7 @@ const CATALOGO = [
       // A fonte do jogo não distingue bem "R"/"A"/"B" — pode ser "Unidade SAS"
       { nome: "Unidade SRS", qtd: 1, incerto: true },
     ],
-    imagem: "Imagens/Coruja/Screenshot_3.png",
+    imagem: "Imagens/Trocas/Coruja/Screenshot_3.png",
   },
   {
     item: "Fuzil de Precisão VSK-94",
@@ -889,7 +889,7 @@ const CATALOGO = [
       { nome: "Peças metálicas", qtd: 2 },
       { nome: "Cabeça de Tark", qtd: 1 },
     ],
-    imagem: "Imagens/Coruja/Screenshot_19.png",
+    imagem: "Imagens/Trocas/Coruja/Screenshot_19.png",
   },
   {
     item: "Fuzil SKS Tático",
@@ -902,7 +902,7 @@ const CATALOGO = [
       { nome: "Anel", qtd: 1 },
       { nome: "Revista Playboy MAXIM", qtd: 1, incerto: true },
     ],
-    imagem: "Imagens/Barbudo/Screenshot_2.png",
+    imagem: "Imagens/Trocas/Barbudo/Screenshot_2.png",
   },
   {
     item: "SVDm-2",
@@ -915,7 +915,7 @@ const CATALOGO = [
       { nome: "Unidade SRS", qtd: 1, incerto: true },
       { nome: "Olho de Poltergeist", qtd: 1 },
     ],
-    imagem: "Imagens/Barbudo/Screenshot_3.png",
+    imagem: "Imagens/Trocas/Barbudo/Screenshot_3.png",
   },
   {
     item: "M16A1",
@@ -927,7 +927,7 @@ const CATALOGO = [
       { nome: "Memória RAM", qtd: 2 },
       { nome: "Cérebro de Controlador", qtd: 1 },
     ],
-    imagem: "Imagens/Barbudo/Screenshot_4.png",
+    imagem: "Imagens/Trocas/Barbudo/Screenshot_4.png",
   },
   {
     // Título cortado nas duas bordas da tela ("uzil de Assalto AK-74 Modificad")
@@ -941,7 +941,7 @@ const CATALOGO = [
       { nome: "Módulo de Navegação Integrado", qtd: 1, incerto: true },
       { nome: "Mão de Kartik", qtd: 1 },
     ],
-    imagem: "Imagens/Barbudo/Screenshot_5.png",
+    imagem: "Imagens/Trocas/Barbudo/Screenshot_5.png",
   },
   {
     item: "KS-23",
@@ -953,7 +953,7 @@ const CATALOGO = [
       { nome: "Bateria militar 6-STEN-1", qtd: 1, incerto: true },
       { nome: "Coração de Quimera", qtd: 1 },
     ],
-    imagem: "Imagens/Barbudo/Screenshot_6.png",
+    imagem: "Imagens/Trocas/Barbudo/Screenshot_6.png",
   },
   {
     item: "Detector Gilka (Galho)",
@@ -966,7 +966,7 @@ const CATALOGO = [
       { nome: "Ímã", qtd: 1 },
       { nome: "Capacitores", qtd: 1 },
     ],
-    imagem: "Imagens/Barbudo/Screenshot_7.png",
+    imagem: "Imagens/Trocas/Barbudo/Screenshot_7.png",
   },
   {
     item: "Gravador Milga Fm-301",
@@ -976,7 +976,7 @@ const CATALOGO = [
     materiais: [
       { nome: "Caixa de charutos", qtd: 1 },
     ],
-    imagem: "Imagens/Barbudo/Screenshot_8.png",
+    imagem: "Imagens/Trocas/Barbudo/Screenshot_8.png",
   },
   {
     item: "Mira Kobra",
@@ -988,7 +988,7 @@ const CATALOGO = [
       { nome: "Unidade flash segura", qtd: 1 },
       { nome: "Parafusos", qtd: 1 },
     ],
-    imagem: "Imagens/Barbudo/Screenshot_9.png",
+    imagem: "Imagens/Trocas/Barbudo/Screenshot_9.png",
   },
   {
     item: "Mira Baraka",
@@ -1000,7 +1000,7 @@ const CATALOGO = [
       { nome: "Pendrive Militar", qtd: 1 },
       { nome: "Porcas de parafuso", qtd: 1 },
     ],
-    imagem: "Imagens/Barbudo/Screenshot_10.png",
+    imagem: "Imagens/Trocas/Barbudo/Screenshot_10.png",
   },
   {
     item: "Capacete de enduro",
@@ -1012,6 +1012,6 @@ const CATALOGO = [
       { nome: "Protetor bucal de capacete de enduro", qtd: 1, incerto: true },
       { nome: "Mão de Izlom", qtd: 2 },
     ],
-    imagem: "Imagens/Barbudo/Screenshot_11.png",
+    imagem: "Imagens/Trocas/Barbudo/Screenshot_11.png",
   },
 ];
