@@ -22,15 +22,14 @@ const MATERIAIS_CRAFT = {
   m12: { nome: "Peças metálicas", icone: "Imagens/Craft/_icones/m12.png" },               // = VSK-94 (Coruja)
   m13: { nome: "Peças de armas", icone: "Imagens/Craft/_icones/m13.png" },                // = Viper-5 (Wolf)
 
+  // Mesmos itens das trocas, mas em estado impecável: o jogo usa ícones diferentes
+  // conforme a conservação, e nas trocas abaixo eles aparecem na versão danificada.
+  // Por isso a textura diverge (enferrujada x limpa) apesar de ser o mesmo item.
+  m04: { nome: "Pedaço de acrílico", icone: "Imagens/Craft/_icones/m04.png" },   // = Supressor GemTech Tundra (Barmen)
+  m10: { nome: "Controlador de motor", icone: "Imagens/Craft/_icones/m10.png" }, // = SPAS-12 Semi-Auto (Barmen)
+
   m03: { nome: "Placa de Kevlar", icone: "Imagens/Craft/_icones/m03.png" },
   m11: { nome: "AK", incerto: true, dica: "AK com coronha de madeira — modelo exato não identificado", icone: "Imagens/Craft/_icones/m11.png" },
-
-  // Nomes propostos que NÃO bateram na comparação de ícone — reconferir no jogo:
-  // o "Pedaço de acrílico" das trocas é um quadrado marrom texturizado, este é branco liso.
-  m04: { nome: "Pedaço de acrílico", incerto: true, dica: "quadrado branco liso", icone: "Imagens/Craft/_icones/m04.png" },
-  // o "Controlador de motor" da SPAS-12 é uma placa plana enferrujada, este é um painel
-  // metálico com faixas vermelhas e botões, visto em perspectiva.
-  m10: { nome: "Controlador de motor", incerto: true, dica: "painel metálico com faixas vermelhas", icone: "Imagens/Craft/_icones/m10.png" },
 
   m05: { nome: null, dica: "retângulo dourado/mostarda (algum tecido?)", icone: "Imagens/Craft/_icones/m05.png" },
 };

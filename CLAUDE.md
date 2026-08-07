@@ -43,6 +43,8 @@ Ao processar prints novos da bancada:
 3. Ícone realmente novo: recortar com `crop=iw*0.0805:ih*0.115:iw*(0.2187+<indice>*0.084):ih*0.760,scale=120:120` (índice do tile a partir de 0), salvar como `m<NN>.png` e criar a entrada com `nome: null` + `dica`.
 4. Vale tentar casar o ícone com um material já nomeado nas **trocas** — foi assim que `Peças metálicas` e `Peças de armas` foram identificados. Os prints de troca mostram ícone **com** nome, então servem de gabarito.
 
+**Ao comparar ícones, comparar a silhueta, não a textura.** O jogo usa ícones diferentes para o mesmo item conforme o **estado de conservação**: a versão danificada aparece enferrujada/manchada e a impecável aparece limpa. `Pedaço de acrílico` e `Controlador de motor` foram descartados por engano numa rodada por causa disso — são os mesmos itens das trocas, só que em estado melhor. Some-se a isso que o tile das trocas tem fundo **vermelho** e o da bancada fundo **cinza**, o que tinge a percepção de cor. Diferença de cor/textura, sozinha, não descarta um match.
+
 ## Publicação
 
 O site é servido pelo GitHub Pages a partir da branch `main` (raiz): https://romulo-mendes.github.io/catalogo-trocas/. Todo `git push` na `main` republica em ~1 minuto — após atualizar o catálogo, commitar e dar push. O servidor é Linux: os caminhos `imagem` em `dados.js` precisam bater com os arquivos em maiúsculas/minúsculas exatas.
