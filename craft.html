@@ -124,6 +124,7 @@
   .card li .nome { flex: 1; }
   .card li .nome.sem-nome { color: var(--muted); font-style: italic; font-size: 13px; }
   .card li .qtd { color: var(--accent); white-space: nowrap; font-weight: 600; }
+  .incerto { color: var(--highlight); cursor: help; }
   #vazio { grid-column: 1 / -1; text-align: center; color: var(--muted); padding: 40px 0; }
   #modal {
     display: none;
@@ -178,7 +179,7 @@
   <div class="legenda"></div>
 </div>
 
-<script src="craft.js?v=2026-08-06"></script>
+<script src="craft.js?v=2026-08-07"></script>
 <script>
   const $busca = document.getElementById("busca");
   const $lugar = document.getElementById("filtro-lugar");
@@ -225,12 +226,15 @@
   }
 
   // Quantos nomes ainda faltam — a bancada não mostra texto, então isso é preenchido à mão
+  const total = Object.keys(MATERIAIS_CRAFT).length;
   const semNome = Object.values(MATERIAIS_CRAFT).filter(m => !m.nome).length;
+  const aConfirmar = Object.values(MATERIAIS_CRAFT).filter(m => m.nome && m.incerto).length;
   const receitasSemNome = CRAFT.filter(r => !r.item).length;
   document.getElementById("aviso").innerHTML =
     `A tela da bancada não mostra nome nenhum — só o modelo do resultado e os ícones dos ingredientes. ` +
-    `Faltam confirmar <strong>${semNome} de ${Object.keys(MATERIAIS_CRAFT).length}</strong> ingredientes e ` +
-    `<strong>${receitasSemNome} de ${CRAFT.length}</strong> nomes de resultado (mostrados em itálico). ` +
+    `Dos <strong>${total}</strong> ingredientes, <strong>${total - semNome - aConfirmar}</strong> estão nomeados, ` +
+    `<strong>${aConfirmar}</strong> aguardam confirmação (marcados com "?") e <strong>${semNome}</strong> ainda não têm nome. ` +
+    `Faltam também <strong>${receitasSemNome} de ${CRAFT.length}</strong> nomes de resultado (em itálico). ` +
     `As quantidades estão todas conferidas.`;
 
   // Texto usado na busca: nome quando existe, senão a dica visual
@@ -256,7 +260,9 @@
         const m = MATERIAIS_CRAFT[i.id];
         const casou = termo && norm(rotulo(m)).includes(termo);
         const nome = m.nome
-          ? `<span class="nome">${esc(m.nome)}</span>`
+          ? `<span class="nome">${esc(m.nome)}` +
+            (m.incerto ? ` <span class="incerto" title="${esc(m.dica || "")} — confirmar no jogo">?</span>` : "") +
+            `</span>`
           : `<span class="nome sem-nome" title="Nome ainda não confirmado no jogo">${esc(m.dica)} ?</span>`;
         return `<li${casou ? ' class="match"' : ""}>` +
                `<img src="${esc(m.icone)}" alt="" loading="lazy">` +

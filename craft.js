@@ -10,21 +10,29 @@
 //   CRAFT — uma entrada por receita, referenciando os ingredientes por id.
 //
 // Os ícones em `Imagens/Craft/_icones/` foram recortados dos próprios screenshots.
+// `incerto: true` = nome que ainda não foi possível confirmar (a página mostra um "?").
 const MATERIAIS_CRAFT = {
-  m01: { nome: null, dica: "caixa laranja «АПТЕЧКА» (kit médico)", icone: "Imagens/Craft/_icones/m01.png" },
-  m02: { nome: null, dica: "cartelas de comprimidos / medicamentos", icone: "Imagens/Craft/_icones/m02.png" },
-  m03: { nome: null, dica: "placa cinza escura (placa balística?)", icone: "Imagens/Craft/_icones/m03.png" },
-  m04: { nome: null, dica: "quadrado branco liso (tecido?)", icone: "Imagens/Craft/_icones/m04.png" },
-  m05: { nome: null, dica: "retângulo dourado/mostarda (kevlar?)", icone: "Imagens/Craft/_icones/m05.png" },
-  m06: { nome: null, dica: "barra azul fina", icone: "Imagens/Craft/_icones/m06.png" },
-  m07: { nome: null, dica: "esfera prateada/vidro", icone: "Imagens/Craft/_icones/m07.png" },
-  m08: { nome: null, dica: "fuzil de madeira clara (Mosin?)", icone: "Imagens/Craft/_icones/m08.png" },
-  m09: { nome: null, dica: "fuzil preto fino", icone: "Imagens/Craft/_icones/m09.png" },
-  m10: { nome: null, dica: "painel/caixa branca com botões vermelhos", icone: "Imagens/Craft/_icones/m10.png" },
-  m11: { nome: null, dica: "AK com coronha de madeira", icone: "Imagens/Craft/_icones/m11.png" },
-  // Estes dois foram identificados por bater com o ícone de uma troca já catalogada
-  m12: { nome: "Peças metálicas", icone: "Imagens/Craft/_icones/m12.png" },
-  m13: { nome: "Peças de armas", icone: "Imagens/Craft/_icones/m13.png" },
+  m01: { nome: "Kit médico militar", icone: "Imagens/Craft/_icones/m01.png" },
+  // Confirmados por comparação de ícone com uma troca já catalogada:
+  m02: { nome: "Cartela de Remédios Preservada", icone: "Imagens/Craft/_icones/m02.png" }, // = Taurus Raging Bull (Barmen)
+  m06: { nome: "Projeto", icone: "Imagens/Craft/_icones/m06.png" },                       // = Supressor GemTech Tundra (Barmen)
+  m07: { nome: "Peças de reposição SE", icone: "Imagens/Craft/_icones/m07.png" },         // = Máscara XM-40 (Barmen)
+  m08: { nome: "SK 59/66", icone: "Imagens/Craft/_icones/m08.png" },                      // = Fuzil SKS Tático (Barbudo)
+  m09: { nome: "Fuzil SKS Tático", icone: "Imagens/Craft/_icones/m09.png" },              // = item final de uma troca do Barbudo
+  m12: { nome: "Peças metálicas", icone: "Imagens/Craft/_icones/m12.png" },               // = VSK-94 (Coruja)
+  m13: { nome: "Peças de armas", icone: "Imagens/Craft/_icones/m13.png" },                // = Viper-5 (Wolf)
+
+  m03: { nome: "Placa de Kevlar", icone: "Imagens/Craft/_icones/m03.png" },
+  m11: { nome: "AK", incerto: true, dica: "AK com coronha de madeira — modelo exato não identificado", icone: "Imagens/Craft/_icones/m11.png" },
+
+  // Nomes propostos que NÃO bateram na comparação de ícone — reconferir no jogo:
+  // o "Pedaço de acrílico" das trocas é um quadrado marrom texturizado, este é branco liso.
+  m04: { nome: "Pedaço de acrílico", incerto: true, dica: "quadrado branco liso", icone: "Imagens/Craft/_icones/m04.png" },
+  // o "Controlador de motor" da SPAS-12 é uma placa plana enferrujada, este é um painel
+  // metálico com faixas vermelhas e botões, visto em perspectiva.
+  m10: { nome: "Controlador de motor", incerto: true, dica: "painel metálico com faixas vermelhas", icone: "Imagens/Craft/_icones/m10.png" },
+
+  m05: { nome: null, dica: "retângulo dourado/mostarda (algum tecido?)", icone: "Imagens/Craft/_icones/m05.png" },
 };
 
 // `item: null` = a bancada não mostra o nome do resultado, só o modelo 3D (ver `imagem`).
